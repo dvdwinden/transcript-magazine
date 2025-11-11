@@ -189,6 +189,7 @@ img:hover {
 .lightbox-caption {
     color: white;
     font-size: 0.875rem;
+    font-style: italic;
     margin-top: 1rem;
     max-width: 90%;
     text-align: center;

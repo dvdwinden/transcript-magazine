@@ -1,5 +1,7 @@
 # TRANSCRIPT Magazine
 
+The new _TRANSCRIPT_ Magazine website—coming soon.
+
 ### Structure
 
 - `src/` - Source files

@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Font Face Declarations */
+@font-face {
+    font-family: 'Family';
+    src: url('/assets/fonts/family-light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Family';
+    src: url('/assets/fonts/family-light-italic.woff2') format('woff2');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Family';
+    src: url('/assets/fonts/family-bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Custom styles */
+body {
+    font-family: theme('fontFamily.sans');
+}
+
+.prose {
+    font-family: theme('fontFamily.serif');
+}

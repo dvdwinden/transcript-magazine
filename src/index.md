@@ -11,17 +11,17 @@ description: TRANSCRIPT Magazine - A seasonal literary magazine
   <h2>ISSUE ONE</h2>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
   <a href="#" class="button">Read Issue One</a>
-  <div class="photo-placeholder"></div>
+  {% image "./src/assets/images/transcript-spread.jpg", "TRANSCRIPT Magazine spread" %}
   <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   <div class="photo-gallery">
-    <div class="photo-placeholder"></div>
-    <div class="photo-placeholder"></div>
-    <div class="photo-placeholder"></div>
-    <div class="photo-placeholder"></div>
-    <div class="photo-placeholder"></div>
-    <div class="photo-placeholder"></div>
-    <div class="photo-placeholder"></div>
-    <div class="photo-placeholder"></div>
+    {% image "./src/assets/images/transcript-spread.jpg", "TRANSCRIPT Magazine spread" %}
+    {% image "./src/assets/images/transcript-spread.jpg", "TRANSCRIPT Magazine spread" %}
+    {% image "./src/assets/images/transcript-spread.jpg", "TRANSCRIPT Magazine spread" %}
+    {% image "./src/assets/images/transcript-spread.jpg", "TRANSCRIPT Magazine spread" %}
+    {% image "./src/assets/images/transcript-spread.jpg", "TRANSCRIPT Magazine spread" %}
+    {% image "./src/assets/images/transcript-spread.jpg", "TRANSCRIPT Magazine spread" %}
+    {% image "./src/assets/images/transcript-spread.jpg", "TRANSCRIPT Magazine spread" %}
+    {% image "./src/assets/images/transcript-spread.jpg", "TRANSCRIPT Magazine spread" %}
   </div>
 </div>
 
@@ -29,17 +29,17 @@ description: TRANSCRIPT Magazine - A seasonal literary magazine
   <h2>ISSUE TWO</h2>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
   <a href="#" class="button">Read Issue Two</a>
-  <div class="photo-placeholder"></div>
+  {% image "./src/assets/images/transcript-spread.jpg", "TRANSCRIPT Magazine spread" %}
   <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   <div class="photo-gallery">
-    <div class="photo-placeholder"></div>
-    <div class="photo-placeholder"></div>
-    <div class="photo-placeholder"></div>
-    <div class="photo-placeholder"></div>
-    <div class="photo-placeholder"></div>
-    <div class="photo-placeholder"></div>
-    <div class="photo-placeholder"></div>
-    <div class="photo-placeholder"></div>
+    {% image "./src/assets/images/transcript-spread.jpg", "TRANSCRIPT Magazine spread" %}
+    {% image "./src/assets/images/transcript-spread.jpg", "TRANSCRIPT Magazine spread" %}
+    {% image "./src/assets/images/transcript-spread.jpg", "TRANSCRIPT Magazine spread" %}
+    {% image "./src/assets/images/transcript-spread.jpg", "TRANSCRIPT Magazine spread" %}
+    {% image "./src/assets/images/transcript-spread.jpg", "TRANSCRIPT Magazine spread" %}
+    {% image "./src/assets/images/transcript-spread.jpg", "TRANSCRIPT Magazine spread" %}
+    {% image "./src/assets/images/transcript-spread.jpg", "TRANSCRIPT Magazine spread" %}
+    {% image "./src/assets/images/transcript-spread.jpg", "TRANSCRIPT Magazine spread" %}
   </div>
 </div>
 
@@ -47,17 +47,17 @@ description: TRANSCRIPT Magazine - A seasonal literary magazine
   <h2>ISSUE THREE</h2>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
   <a href="#" class="button">Read Issue Three</a>
-  <div class="photo-placeholder"></div>
+  {% image "./src/assets/images/transcript-spread.jpg", "TRANSCRIPT Magazine spread" %}
   <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   <div class="photo-gallery">
-    <div class="photo-placeholder"></div>
-    <div class="photo-placeholder"></div>
-    <div class="photo-placeholder"></div>
-    <div class="photo-placeholder"></div>
-    <div class="photo-placeholder"></div>
-    <div class="photo-placeholder"></div>
-    <div class="photo-placeholder"></div>
-    <div class="photo-placeholder"></div>
+    {% image "./src/assets/images/transcript-spread.jpg", "TRANSCRIPT Magazine spread" %}
+    {% image "./src/assets/images/transcript-spread.jpg", "TRANSCRIPT Magazine spread" %}
+    {% image "./src/assets/images/transcript-spread.jpg", "TRANSCRIPT Magazine spread" %}
+    {% image "./src/assets/images/transcript-spread.jpg", "TRANSCRIPT Magazine spread" %}
+    {% image "./src/assets/images/transcript-spread.jpg", "TRANSCRIPT Magazine spread" %}
+    {% image "./src/assets/images/transcript-spread.jpg", "TRANSCRIPT Magazine spread" %}
+    {% image "./src/assets/images/transcript-spread.jpg", "TRANSCRIPT Magazine spread" %}
+    {% image "./src/assets/images/transcript-spread.jpg", "TRANSCRIPT Magazine spread" %}
   </div>
 </div>
 
@@ -65,16 +65,16 @@ description: TRANSCRIPT Magazine - A seasonal literary magazine
   <h2>ISSUE FOUR</h2>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
   <a href="#" class="button">Read Issue Four</a>
-  <div class="photo-placeholder"></div>
+  {% image "./src/assets/images/transcript-spread.jpg", "TRANSCRIPT Magazine spread" %}
   <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   <div class="photo-gallery">
-    <div class="photo-placeholder"></div>
-    <div class="photo-placeholder"></div>
-    <div class="photo-placeholder"></div>
-    <div class="photo-placeholder"></div>
-    <div class="photo-placeholder"></div>
-    <div class="photo-placeholder"></div>
-    <div class="photo-placeholder"></div>
-    <div class="photo-placeholder"></div>
+    {% image "./src/assets/images/transcript-spread.jpg", "TRANSCRIPT Magazine spread" %}
+    {% image "./src/assets/images/transcript-spread.jpg", "TRANSCRIPT Magazine spread" %}
+    {% image "./src/assets/images/transcript-spread.jpg", "TRANSCRIPT Magazine spread" %}
+    {% image "./src/assets/images/transcript-spread.jpg", "TRANSCRIPT Magazine spread" %}
+    {% image "./src/assets/images/transcript-spread.jpg", "TRANSCRIPT Magazine spread" %}
+    {% image "./src/assets/images/transcript-spread.jpg", "TRANSCRIPT Magazine spread" %}
+    {% image "./src/assets/images/transcript-spread.jpg", "TRANSCRIPT Magazine spread" %}
+    {% image "./src/assets/images/transcript-spread.jpg", "TRANSCRIPT Magazine spread" %}
   </div>
 </div>

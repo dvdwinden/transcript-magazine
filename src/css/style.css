@@ -123,6 +123,14 @@ img:hover {
     opacity: 0.85;
 }
 
+.lightbox img {
+    cursor: default;
+}
+
+.lightbox img:hover {
+    opacity: 1;
+}
+
 .photo-placeholder::after {
     content: 'Photo';
     color: #999;

@@ -42,16 +42,19 @@
     <div class="lightbox" id="lightbox">
         <button class="lightbox-close" aria-label="Close lightbox">&times;</button>
         <div class="lightbox-inner"></div>
+        <div class="lightbox-caption"></div>
     </div>
     <script>
         const lightbox = document.getElementById('lightbox');
         const inner = lightbox.querySelector('.lightbox-inner');
+        const caption = lightbox.querySelector('.lightbox-caption');
         const closeBtn = lightbox.querySelector('.lightbox-close');
         const clickables = document.querySelectorAll('.photo-placeholder, img');
 
         function closeLightbox() {
             lightbox.classList.remove('active');
             inner.innerHTML = '';
+            caption.innerHTML = '';
         }
 
         clickables.forEach(el => {
@@ -60,11 +63,19 @@
                 el.addEventListener('click', (e) => {
                     e.stopPropagation();
                     inner.innerHTML = '';
+                    caption.innerHTML = '';
                     const clone = el.cloneNode(true);
                     // Ensure reasonable size inside lightbox
                     clone.style.width = '';
                     clone.style.height = '';
                     inner.appendChild(clone);
+                    
+                    // Add caption if image has alt text
+                    const altText = el.alt || el.querySelector('img')?.alt;
+                    if (altText) {
+                        caption.textContent = altText;
+                    }
+                    
                     lightbox.classList.add('active');
                 });
             }

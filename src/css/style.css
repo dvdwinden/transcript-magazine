@@ -168,6 +168,7 @@ img:hover {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.9);
     z-index: 1000;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     cursor: pointer;
@@ -179,10 +180,19 @@ img:hover {
 
 .lightbox-inner {
     max-width: 90%;
-    max-height: 90%;
+    max-height: 80%;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.lightbox-caption {
+    color: white;
+    font-size: 0.875rem;
+    margin-top: 1rem;
+    max-width: 90%;
+    text-align: center;
+    line-height: 1.5;
 }
 
 .lightbox-inner .photo-placeholder,

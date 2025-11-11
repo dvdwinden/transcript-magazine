@@ -10,7 +10,7 @@ description: TRANSCRIPT is a seasonal magazine, featuring literary essays, short
 <div class="issue-section">
   <h2>ISSUE ONE</h2>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-  <a href="#" class="button">Read Issue One</a>
+  <p><a href="#" class="button">Read Issue One</a></p>
   {% image "./src/assets/images/transcript-spread.jpg", "Opening pages of Issue One, featuring an essay on memory and place" %}
   <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   <div class="photo-gallery">
@@ -28,7 +28,7 @@ description: TRANSCRIPT is a seasonal magazine, featuring literary essays, short
 <div class="issue-section">
   <h2>ISSUE TWO</h2>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-  <a href="#" class="button">Read Issue Two</a>
+  <p><a href="#" class="button">Read Issue Two</a></p>
   {% image "./src/assets/images/transcript-spread.jpg", "Cover and opening spread of Issue Two" %}
   <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   <div class="photo-gallery">
@@ -46,7 +46,7 @@ description: TRANSCRIPT is a seasonal magazine, featuring literary essays, short
 <div class="issue-section">
   <h2>ISSUE THREE</h2>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-  <a href="#" class="button">Read Issue Three</a>
+  <p><a href="#" class="button">Read Issue Three</a></p>
   {% image "./src/assets/images/transcript-spread.jpg", "Issue Three cover featuring work by Bernke Klein Zandvoort" %}
   <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   <div class="photo-gallery">
@@ -64,7 +64,7 @@ description: TRANSCRIPT is a seasonal magazine, featuring literary essays, short
 <div class="issue-section">
   <h2>ISSUE FOUR</h2>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-  <a href="#" class="button">Read Issue Four</a>
+  <p><a href="#" class="button">Read Issue Four</a></p>
   {% image "./src/assets/images/transcript-spread.jpg", "Issue Four opening with visual work by Ade Hanft" %}
   <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   <div class="photo-gallery">

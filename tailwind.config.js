@@ -14,7 +14,7 @@ module.exports = {
         DEFAULT: {
           css: {
             fontSize: '21px',
-            lineHeight: '1.7',
+            lineHeight: '1.5',
             color: '#222',
             maxWidth: '65ch',
             p: {

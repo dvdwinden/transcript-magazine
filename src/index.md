@@ -4,10 +4,74 @@ title: Home
 description: TRANSCRIPT Magazine - A seasonal literary magazine
 ---
 
-<div class="max-w-4xl mx-auto prose prose-lg">
+<div class="issue-section">
+  <h2>ISSUE ONE</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+  <a href="#" class="button">Read Issue One</a>
+  <div class="photo-placeholder"></div>
+  <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <div class="photo-gallery">
+    <div class="photo-placeholder"></div>
+    <div class="photo-placeholder"></div>
+    <div class="photo-placeholder"></div>
+    <div class="photo-placeholder"></div>
+    <div class="photo-placeholder"></div>
+    <div class="photo-placeholder"></div>
+    <div class="photo-placeholder"></div>
+    <div class="photo-placeholder"></div>
+  </div>
+</div>
 
-# TRANSCRIPT Magazine
+<div class="issue-section">
+  <h2>ISSUE TWO</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+  <a href="#" class="button">Read Issue Two</a>
+  <div class="photo-placeholder"></div>
+  <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <div class="photo-gallery">
+    <div class="photo-placeholder"></div>
+    <div class="photo-placeholder"></div>
+    <div class="photo-placeholder"></div>
+    <div class="photo-placeholder"></div>
+    <div class="photo-placeholder"></div>
+    <div class="photo-placeholder"></div>
+    <div class="photo-placeholder"></div>
+    <div class="photo-placeholder"></div>
+  </div>
+</div>
 
-A seasonal magazine, featuring literary essays, short stories, poetry, and everything in-between. 
+<div class="issue-section">
+  <h2>ISSUE THREE</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+  <a href="#" class="button">Read Issue Three</a>
+  <div class="photo-placeholder"></div>
+  <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <div class="photo-gallery">
+    <div class="photo-placeholder"></div>
+    <div class="photo-placeholder"></div>
+    <div class="photo-placeholder"></div>
+    <div class="photo-placeholder"></div>
+    <div class="photo-placeholder"></div>
+    <div class="photo-placeholder"></div>
+    <div class="photo-placeholder"></div>
+    <div class="photo-placeholder"></div>
+  </div>
+</div>
 
+<div class="issue-section">
+  <h2>ISSUE FOUR</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+  <a href="#" class="button">Read Issue Four</a>
+  <div class="photo-placeholder"></div>
+  <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <div class="photo-gallery">
+    <div class="photo-placeholder"></div>
+    <div class="photo-placeholder"></div>
+    <div class="photo-placeholder"></div>
+    <div class="photo-placeholder"></div>
+    <div class="photo-placeholder"></div>
+    <div class="photo-placeholder"></div>
+    <div class="photo-placeholder"></div>
+    <div class="photo-placeholder"></div>
+  </div>
 </div>

@@ -8,17 +8,6 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: [
-          'Family',
-          'system-ui',
-          '-apple-system',
-          'BlinkMacSystemFont',
-          'Segoe UI',
-          'Roboto',
-          'Helvetica Neue',
-          'Arial',
-          'sans-serif'
-        ],
         serif: ['Family', 'Georgia', 'Times New Roman', 'Times', 'serif'],
       },
     },

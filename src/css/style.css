@@ -2,6 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
+/* CSS Variables */
+:root {
+    --color-text: #222;
+    --color-bg: white;
+    --color-border: #e5e5e5;
+    --color-link-underline: rgba(34, 34, 34, 0.3);
+    --color-link-underline-hover: rgba(34, 34, 34, 0.6);
+    
+    --font-size-body: 1.3125rem; /* 21px */
+    --font-size-button: 1.3125rem; /* 21px */
+    --font-size-caption: 0.875rem; /* 14px */
+    --font-size-footer: 1.3125rem; /* 21px */
+    
+    --line-height-body: 1.5;
+    --line-height-footer: 1.6;
+    --line-height-caption: 1.5;
+    
+    --spacing-xs: 1rem;
+    --spacing-sm: 1.5rem;
+    --spacing-md: 3rem;
+    --spacing-lg: 4rem;
+    
+    --width-narrow: 720px;
+    --width-wide: 1200px;
+    
+    --radius-sm: 3px;
+    
+    --transition-speed: 0.2s;
+}
+
 /* Font Face Declarations */
 @font-face {
     font-family: 'Family';
@@ -30,10 +60,10 @@
 /* Custom styles */
 body {
     font-family: theme('fontFamily.serif');
-    font-size: 21px;
-    line-height: 1.5;
-    color: #222;
-    background-color: white;
+    font-size: var(--font-size-body);
+    line-height: var(--line-height-body);
+    color: var(--color-text);
+    background-color: var(--color-bg);
     font-weight: 300;
     text-wrap: pretty;
 }
@@ -52,22 +82,22 @@ h1 {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: var(--width-wide);
     margin: 0 auto;
-    padding: 3rem 1.5rem;
+    padding: var(--spacing-md) var(--spacing-sm);
 }
 
 .container > * {
-    max-width: 720px;
+    max-width: var(--width-narrow);
     margin-left: auto;
     margin-right: auto;
 }
 
 .issue-section {
-    margin-bottom: 4rem;
-    padding-bottom: 4rem;
-    border-bottom: 1px solid #e5e5e5;
-    max-width: 1200px;
+    margin-bottom: var(--spacing-lg);
+    padding-bottom: var(--spacing-lg);
+    border-bottom: 1px solid var(--color-border);
+    max-width: var(--width-wide);
 }
 
 .issue-section:last-of-type {
@@ -76,7 +106,7 @@ h1 {
 
 .issue-section > h2,
 .issue-section > p {
-    max-width: 720px;
+    max-width: var(--width-narrow);
     margin-left: auto;
     margin-right: auto;
 }
@@ -91,21 +121,21 @@ h1 {
 }
 
 .issue-section p {
-    margin-bottom: 1.5rem;
-    line-height: 1.5;
+    margin-bottom: var(--spacing-sm);
+    line-height: var(--line-height-body);
 }
 
 .button {
     display: inline-block;
-    padding: 0.5rem 1rem;
-    background-color: #222;
-    color: white;
+    padding: 0.5rem var(--spacing-xs);
+    background-color: var(--color-text);
+    color: var(--color-bg);
     text-decoration: none;
     font-weight: 700;
-    font-size: 21px;
-    margin-bottom: 1.5rem;
-    border-radius: 3px;
-    transition: background-color 0.2s;
+    font-size: var(--font-size-button);
+    margin-bottom: var(--spacing-sm);
+    border-radius: var(--radius-sm);
+    transition: background-color var(--transition-speed);
 }
 
 .button:hover {
@@ -116,12 +146,14 @@ h1 {
     width: 100%;
     height: 400px;
     background-color: #f0f0f0;
-    margin: 4rem 0;
+    margin: var(--spacing-lg) 0;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    transition: opacity 0.2s;
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+    transition: opacity var(--transition-speed);
 }
 
 .photo-placeholder:hover {
@@ -130,7 +162,8 @@ h1 {
 
 img {
     cursor: pointer;
-    transition: opacity 0.2s;
+    border-radius: var(--radius-sm);
+    transition: opacity var(--transition-speed);
 }
 
 img:hover {
@@ -139,6 +172,7 @@ img:hover {
 
 .lightbox img {
     cursor: default;
+    border-radius: 0;
 }
 
 .lightbox img:hover {
@@ -153,14 +187,16 @@ img:hover {
 
 .issue-section picture {
     display: block;
-    margin: 8rem 0;
+    margin: var(--spacing-lg) 0;
+    border-radius: var(--radius-sm);
+    overflow: hidden;
 }
 
 .photo-gallery {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-    margin: 8rem 0;
+    gap: var(--spacing-xs);
+    margin: var(--spacing-lg) 0;
 }
 
 .photo-gallery picture,
@@ -206,13 +242,13 @@ img:hover {
 }
 
 .lightbox-caption {
-    color: white;
-    font-size: 0.875rem;
+    color: var(--color-bg);
+    font-size: var(--font-size-caption);
     font-style: italic;
-    margin-top: 1rem;
+    margin-top: var(--spacing-xs);
     max-width: 90%;
     text-align: center;
-    line-height: 1.5;
+    line-height: var(--line-height-caption);
 }
 
 .lightbox-inner .photo-placeholder,
@@ -228,8 +264,8 @@ img:hover {
     position: absolute;
     top: 2rem;
     right: 2rem;
-    width: 3rem;
-    height: 3rem;
+    width: var(--spacing-md);
+    height: var(--spacing-md);
     background: rgba(255, 255, 255, 0.9);
     border: none;
     border-radius: 50%;
@@ -238,53 +274,53 @@ img:hover {
     align-items: center;
     justify-content: center;
     font-size: 1.5rem;
-    color: #222;
+    color: var(--color-text);
     z-index: 1001;
-    transition: background 0.2s;
+    transition: background var(--transition-speed);
 }
 
 .lightbox-close:hover {
-    background: white;
+    background: var(--color-bg);
 }
 
 /* Footer */
 .footer {
-    margin-top: 4rem;
-    padding: 3rem 0;
-    font-size: 21px;
-    line-height: 1.6;
+    margin-top: var(--spacing-lg);
+    padding: var(--spacing-md) 0;
+    font-size: var(--font-size-footer);
+    line-height: var(--line-height-footer);
 }
 
 .footer-content {
-    border-top: 1px solid #e5e5e5;
-    padding-top: 3rem;
+    border-top: 1px solid var(--color-border);
+    padding-top: var(--spacing-md);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 3rem;
+    gap: var(--spacing-md);
 }
 
 .footer-section h3 {
-    font-size: 21px;
+    font-size: var(--font-size-footer);
     font-weight: 700;
-    margin-bottom: 1rem;
+    margin-bottom: var(--spacing-xs);
     text-transform: uppercase;
     letter-spacing: 0.05em;
 }
 
 .footer-section p {
-    margin-bottom: 1.5rem;
+    margin-bottom: var(--spacing-sm);
 }
 
 .footer-section a {
-    color: #222;
+    color: var(--color-text);
     text-decoration: underline;
-    text-decoration-color: rgba(34, 34, 34, 0.3);
+    text-decoration-color: var(--color-link-underline);
     text-decoration-thickness: 1px;
     text-underline-offset: 2px;
-    transition: opacity 0.2s, text-decoration-color 0.2s;
+    transition: opacity var(--transition-speed), text-decoration-color var(--transition-speed);
 }
 
 .footer-section a:hover {
     opacity: 0.6;
-    text-decoration-color: rgba(34, 34, 34, 0.6);
+    text-decoration-color: var(--color-link-underline-hover);
 }

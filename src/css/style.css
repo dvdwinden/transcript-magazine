@@ -260,6 +260,7 @@ img:hover {
     color: #222;
     text-decoration: underline;
     text-decoration-color: rgba(34, 34, 34, 0.3);
+    text-decoration-thickness: 1px;
     text-underline-offset: 2px;
     transition: opacity 0.2s, text-decoration-color 0.2s;
 }

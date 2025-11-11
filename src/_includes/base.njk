@@ -12,12 +12,19 @@
         {{ content | safe }}
     </main>
     <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" aria-label="Close lightbox">&times;</button>
         <div class="lightbox-inner"></div>
     </div>
     <script>
         const lightbox = document.getElementById('lightbox');
         const inner = lightbox.querySelector('.lightbox-inner');
+        const closeBtn = lightbox.querySelector('.lightbox-close');
         const clickables = document.querySelectorAll('.photo-placeholder, img');
+
+        function closeLightbox() {
+            lightbox.classList.remove('active');
+            inner.innerHTML = '';
+        }
 
         clickables.forEach(el => {
             if (!lightbox.contains(el)) {
@@ -35,9 +42,21 @@
             }
         });
 
-        lightbox.addEventListener('click', () => {
-            lightbox.classList.remove('active');
-            inner.innerHTML = '';
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                closeLightbox();
+            }
+        });
+
+        closeBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            closeLightbox();
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+                closeLightbox();
+            }
         });
     </script>
 </body>

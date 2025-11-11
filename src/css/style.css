@@ -75,8 +75,7 @@ h1 {
 }
 
 .issue-section > h2,
-.issue-section > p,
-.issue-section > a {
+.issue-section > p {
     max-width: 720px;
     margin-left: auto;
     margin-right: auto;
@@ -94,7 +93,6 @@ h1 {
 .issue-section p {
     margin-bottom: 1.5rem;
     line-height: 1.5;
-    max-width: 65ch; /* comfortable measure */
 }
 
 .button {

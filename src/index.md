@@ -1,7 +1,7 @@
 ---
 layout: base.njk
 title: Home
-description: TRANSCRIPT Magazine - A seasonal literary magazine
+description: TRANSCRIPT is a seasonal magazine, featuring literary essays, short stories, poetry, and everything in-between.
 ---
 
 # _TRANSCRIPT Magazine_

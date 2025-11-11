@@ -27,8 +27,9 @@ async function imageShortcode(src, alt, sizes = "100vw") {
 const path = require("path");
 
 module.exports = function (eleventyConfig) {
-  // Pass through fonts (but not images - they'll be processed)
+  // Pass through fonts and favicon (but not images - they'll be processed)
   eleventyConfig.addPassthroughCopy("src/assets/fonts");
+  eleventyConfig.addPassthroughCopy("src/assets/favicon.png");
   
   // Add image shortcode
   eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);

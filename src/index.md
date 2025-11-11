@@ -4,7 +4,7 @@ title: Home
 description: TRANSCRIPT Magazine - A seasonal literary magazine
 ---
 
-# _TRANSCRIPT_ Magazine
+# _TRANSCRIPT Magazine_
 ## A seasonal magazine, featuring literary essays, short stories, poetry, and everything in-between.
 
 <div class="issue-section">

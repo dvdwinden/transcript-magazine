@@ -30,10 +30,20 @@
 /* Custom styles */
 body {
     font-family: theme('fontFamily.serif');
-    font-size: 17px;
+    font-size: 20px;
+    line-height: 1.65;
     color: #222;
     background-color: white;
     font-weight: 300;
+    text-wrap: pretty;
+}
+
+/* Headings should balance lines for better rag */
+.issue-section h1,
+.issue-section h2,
+.issue-section h3,
+.issue-section h4 {
+    text-wrap: balance;
 }
 
 .container {
@@ -47,15 +57,17 @@ body {
 }
 
 .issue-section h2 {
-    font-size: 1.5rem;
+    /* Scale with viewport; ~32-36px typically */
+    font-size: clamp(1.75rem, 1.25rem + 1.5vw, 2.25rem);
     font-weight: 700;
     margin-bottom: 1rem;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.03em;
 }
 
 .issue-section p {
     margin-bottom: 1.5rem;
-    line-height: 1.6;
+    line-height: 1.7;
+    max-width: 65ch; /* comfortable measure */
 }
 
 .button {
@@ -126,9 +138,19 @@ body {
     display: flex;
 }
 
-.lightbox img,
-.lightbox .photo-placeholder {
+.lightbox-inner {
     max-width: 90%;
     max-height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox-inner .photo-placeholder,
+.lightbox-inner img {
+    max-width: 100%;
+    max-height: 90vh;
     object-fit: contain;
+    width: auto;
+    height: auto;
 }

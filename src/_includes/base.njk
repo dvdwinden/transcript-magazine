@@ -8,27 +8,36 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body class="font-serif">
-    <main class="container" role="main">
+    <main class="container prose" role="main">
         {{ content | safe }}
     </main>
     <div class="lightbox" id="lightbox">
-        <div class="photo-placeholder" style="width: 800px; height: 600px;"></div>
+        <div class="lightbox-inner"></div>
     </div>
     <script>
         const lightbox = document.getElementById('lightbox');
-        const photoPlaceholders = document.querySelectorAll('.photo-placeholder');
-        
-        photoPlaceholders.forEach(photo => {
-            if (photo.parentElement.id !== 'lightbox') {
-                photo.addEventListener('click', (e) => {
+        const inner = lightbox.querySelector('.lightbox-inner');
+        const clickables = document.querySelectorAll('.photo-placeholder, img');
+
+        clickables.forEach(el => {
+            if (!lightbox.contains(el)) {
+                el.style.cursor = 'pointer';
+                el.addEventListener('click', (e) => {
                     e.stopPropagation();
+                    inner.innerHTML = '';
+                    const clone = el.cloneNode(true);
+                    // Ensure reasonable size inside lightbox
+                    clone.style.width = '';
+                    clone.style.height = '';
+                    inner.appendChild(clone);
                     lightbox.classList.add('active');
                 });
             }
         });
-        
+
         lightbox.addEventListener('click', () => {
             lightbox.classList.remove('active');
+            inner.innerHTML = '';
         });
     </script>
 </body>

@@ -7,6 +7,10 @@ description: TRANSCRIPT is a seasonal magazine, featuring literary essays, short
 # _TRANSCRIPT Magazine_
 ## A seasonal magazine, featuring literary essays, short stories, poetry, and everything in-between.
 
+<div class="bookmark">
+  {% image "./src/assets/images/bookmark.png", "TRANSCRIPT bookmark" %}
+</div>
+
 <div class="issue-section">
   <h2>ISSUE ONE</h2>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>

@@ -74,6 +74,13 @@ h1 {
     text-wrap: balance;
 }
 
+h2 {
+    font-weight: 300;
+    letter-spacing: 0.03em;
+    margin-bottom: 1rem;
+    font-size: clamp(1.75rem, 1.25rem + 1.5vw, 2.25rem);
+}
+
 .issue-section h1,
 .issue-section h2,
 .issue-section h3,
@@ -115,7 +122,7 @@ h1 {
 .issue-section h2 {
     /* Scale with viewport; ~32-36px typically */
     font-size: clamp(1.75rem, 1.25rem + 1.5vw, 2.25rem);
-    font-weight: 400;
+    font-weight: 300;
     margin-bottom: 1rem;
     letter-spacing: 0.03em;
 }

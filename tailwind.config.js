@@ -22,9 +22,10 @@ module.exports = {
             },
             'h2': {
               fontSize: 'clamp(1.75rem, 1.25rem + 1.5vw, 2.25rem)',
-              fontWeight: '700',
+              fontWeight: '300',
               letterSpacing: '0.03em',
               marginBottom: '1rem',
+              textWrap: 'pretty',
             },
           },
         },

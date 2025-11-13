@@ -74,6 +74,23 @@ h1 {
     text-wrap: balance;
 }
 
+.logo-header {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    margin-bottom: var(--spacing-md);
+    padding: var(--spacing-md) var(--spacing-sm) 0;
+}
+
+.logo-header img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 h2 {
     font-weight: 300;
     letter-spacing: 0.03em;

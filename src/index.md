@@ -4,8 +4,11 @@ title: Home
 description: TRANSCRIPT is a seasonal magazine, featuring literary essays, short stories, poetry, and everything in-between.
 ---
 
-# _TRANSCRIPT Magazine_
+<div class="logo-header">
+  <img src="/assets/images/transcript-magazine-black.svg" alt="TRANSCRIPT Magazine" />
+</div>
 
+<div class="container prose">
 <h2>A seasonal magazine, featuring literary essays, short stories, poetry, and everything in-between.</h2>
 
 <div class="bookmark">
@@ -82,4 +85,5 @@ description: TRANSCRIPT is a seasonal magazine, featuring literary essays, short
     {% image "./src/assets/images/transcript-issue-one-4.jpg", "Visual spread, pages 38–39" %}
     {% image "./src/assets/images/transcript-issue-one-5.jpg", "Final essay by Daniël van der Winden" %}
   </div>
+</div>
 </div>

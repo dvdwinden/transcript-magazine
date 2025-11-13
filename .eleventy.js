@@ -30,6 +30,9 @@ module.exports = function (eleventyConfig) {
   // Pass through fonts and favicon (but not images - they'll be processed)
   eleventyConfig.addPassthroughCopy("src/assets/fonts");
   eleventyConfig.addPassthroughCopy("src/assets/favicon.png");
+  eleventyConfig.addPassthroughCopy({
+    "src/assets/images/transcript-magazine-black.svg": "assets/images/transcript-magazine-black.svg"
+  });
   
   // Add image shortcode
   eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);

@@ -40,12 +40,12 @@ description: TRANSCRIPT is a seasonal magazine, featuring literary essays, short
   </p>
   <p>We printed 100 copies, and they sold out shortly after.
   <div class="photo-gallery">
-    {% image "./src/assets/images/transcript-spread.jpg", "Caption goes here" %}
-    {% image "./src/assets/images/transcript-spread.jpg", "Caption goes here" %}
-    {% image "./src/assets/images/transcript-spread.jpg", "Caption goes here" %}
-    {% image "./src/assets/images/transcript-spread.jpg", "Caption goes here" %}
-    {% image "./src/assets/images/transcript-spread.jpg", "Caption goes here" %}
-    {% image "./src/assets/images/transcript-spread.jpg", "Caption goes here" %}
+    {% image "./src/assets/images/issue-one/transcript-issue-one-event-01.png", "Charlie Jermyn" %}
+    {% image "./src/assets/images/issue-one/transcript-issue-one-event-02.png", "TRANSCRIPT ISSUE ONE at Perdu" %}
+    {% image "./src/assets/images/issue-one/transcript-issue-one-event-03.png", "TRANSCRIPT ISSUE ONE at Perdu" %}
+    {% image "./src/assets/images/issue-one/transcript-issue-one-event-04.png", "TRANSCRIPT ISSUE ONE at Perdu" %}
+    {% image "./src/assets/images/issue-one/transcript-issue-one-event-05.png", "TRANSCRIPT ISSUE ONE at Perdu" %}
+    {% image "./src/assets/images/issue-one/transcript-issue-one-event-06.png", "Iris Cuppen and Daniël van der Winden" %}
   </div>
 </div>
 

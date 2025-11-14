@@ -19,11 +19,14 @@ description: TRANSCRIPT is a seasonal magazine, featuring literary essays, short
 <p>Over the course of two years we created four issues, one for every season, featuring a variety of work: essays, short stories, travelogues, poetry, illustrations, and photography.</p>
 <div class="issue">
   <h2>ISSUE ONE</h2>
-  <p>Mutant turnips, unkempt hedges, herring rolls, touching fingers, fentanyl blasters, fuzzy pets, lumpy landscapes, yellow stockings, forbidden fruits, cigarette tips, and more: our first issue featured a travelogue by <a href="https://www.ciaolemagne.com/?ref=transcriptmag.store" title="Charlie Jermyn" rel="external" target="_blank">Charlie Jermyn</a>, a story by <a href="https://www.iriscuppen.com/?ref=transcriptmag.store" title="Iris Cuppen" rel="external" target="_blank">Iris Cuppen</a>, an essay by <a href="https://www.daniel.pizza/?ref=transcriptmag.store" title="Daniël van der Winden" rel="external" target="_blank">Daniël van der Winden</a>, and visual work by <a href="https://ezekielaquino.com/?ref=transcriptmag.store" title="Ezekiel Aquino" rel="external" target="_blank">Ezekiel Aquino</a> and <a href="https://www.thomasenjurgen.nl/?ref=transcriptmag.store" title="Thomas & Jurgen" rel="external" target="_blank">Thomas & Jurgen.</p>
+  <p>Mutant turnips, unkempt hedges, herring rolls, touching fingers, fentanyl blasters, fuzzy pets, lumpy landscapes, yellow stockings, forbidden fruits, cigarette tips, and more: our first issue featured a travelogue by <a href="https://www.ciaolemagne.com/?ref=transcriptmag.store" title="Charlie Jermyn" rel="external" target="_blank">Charlie Jermyn</a>, a story by <a href="https://www.iriscuppen.com/?ref=transcriptmag.store" title="Iris Cuppen" rel="external" target="_blank">Iris Cuppen</a>, an essay by <a href="https://www.daniel.pizza/?ref=transcriptmag.store" title="Daniël van der Winden" rel="external" target="_blank">Daniël van der Winden</a>, and visual work by <a href="https://ezekielaquino.com/?ref=transcriptmag.store" title="Ezekiel Aquino" rel="external" target="_blank">Ezekiel Aquino</a> and <a href="https://www.thomasenjurgen.nl/?ref=transcriptmag.store" title="Thomas & Jurgen" rel="external" target="_blank">Thomas & Jurgen</a>.</p>
 
-  <p><a href="#" class="button">Read Issue One</a></p>
   {% image "./src/assets/images/transcript-issue-one-0.jpg", "Opening pages of Issue One, featuring an essay on memory and place" %}
-  <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+  <p>
+    <em>ISSUE ONE</em> was presented at <a href="https://perdu.nl/agenda/journal-launch-transcript-issue-one/?ref=transcriptmag.store" rel="external" target="_blank">Perdu</a> in Amsterdam. Daniël van der Winden provided an introduction to the magazine, Iris Cuppen shared the story we printed of hers, and Charlie Jermyn read the work that led up the travelogue he submitted to us.
+  </p>
+  <p>We printed 100 copies, and they sold out shortly after.
   <div class="photo-gallery">
     {% image "./src/assets/images/transcript-issue-one-1.jpg", "Detail of the opening spread" %}
     {% image "./src/assets/images/transcript-issue-one-2.jpg", "Poetry section, pages 12–13" %}

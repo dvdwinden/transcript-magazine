@@ -271,7 +271,8 @@ img:hover {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: var(--spacing-xs);
-    margin: var(--spacing-lg) 0;
+    margin-bottom: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
 }
 
 .photo-gallery picture,

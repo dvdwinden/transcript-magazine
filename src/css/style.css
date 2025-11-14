@@ -129,6 +129,19 @@ h2.subtitle {
     font-variant-numeric: oldstyle-nums;
 }
 
+.prose a { 
+    text-decoration: underline;
+    text-decoration-color: var(--color-link-underline);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+    transition: opacity var(--transition-speed), text-decoration-color var(--transition-speed);
+}
+
+.prose a:hover {
+    opacity: 0.6;
+    text-decoration-color: var(--color-link-underline-hover);
+}
+
 .issue {
     margin-top: var(--spacing-xl);
     margin-bottom: var(--spacing-lg);
@@ -148,12 +161,11 @@ h2.subtitle {
     margin-right: auto;
 }
 
-.issue h1,
 .issue h2 {
-    /* Scale with viewport; ~32-36px typically */
-    font-size: clamp(1.75rem, 1.25rem + 1.5vw, 2.25rem);
+    font-size: clamp(1.25rem, 1.25rem + 0.75vw, 2rem);
     font-weight: 300;
-    margin-bottom: 1rem;
+    font-style: italic;
+    margin-bottom: var(--spacing-xs);
     letter-spacing: 0.03em;
 }
 
@@ -376,14 +388,5 @@ img:hover {
 
 .footer-section a {
     color: var(--color-text);
-    text-decoration: underline;
-    text-decoration-color: var(--color-link-underline);
-    text-decoration-thickness: 1px;
-    text-underline-offset: 2px;
-    transition: opacity var(--transition-speed), text-decoration-color var(--transition-speed);
 }
 
-.footer-section a:hover {
-    opacity: 0.6;
-    text-decoration-color: var(--color-link-underline-hover);
-}

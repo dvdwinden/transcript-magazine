@@ -19,7 +19,8 @@ description: TRANSCRIPT is a seasonal magazine, featuring literary essays, short
 <p>Over the course of two years we created four issues, one for every season, featuring a variety of work: essays, short stories, travelogues, poetry, illustrations, and photography.</p>
 <div class="issue">
   <h2>ISSUE ONE</h2>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+  <p>Mutant turnips, unkempt hedges, herring rolls, touching fingers, fentanyl blasters, fuzzy pets, lumpy landscapes, yellow stockings, forbidden fruits, cigarette tips, and more: our first issue featured a travelogue by <a href="https://www.ciaolemagne.com/?ref=transcriptmag.store" title="Charlie Jermyn" rel="external" target="_blank">Charlie Jermyn</a>, a story by <a href="https://www.iriscuppen.com/?ref=transcriptmag.store" title="Iris Cuppen" rel="external" target="_blank">Iris Cuppen</a>, an essay by <a href="https://www.daniel.pizza/?ref=transcriptmag.store" title="Daniël van der Winden" rel="external" target="_blank">Daniël van der Winden</a>, and visual work by <a href="https://ezekielaquino.com/?ref=transcriptmag.store" title="Ezekiel Aquino" rel="external" target="_blank">Ezekiel Aquino</a> and <a href="https://www.thomasenjurgen.nl/?ref=transcriptmag.store" title="Thomas & Jurgen" rel="external" target="_blank">Thomas & Jurgen.</p>
+
   <p><a href="#" class="button">Read Issue One</a></p>
   {% image "./src/assets/images/transcript-issue-one-0.jpg", "Opening pages of Issue One, featuring an essay on memory and place" %}
   <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>

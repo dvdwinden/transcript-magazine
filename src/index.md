@@ -23,6 +23,13 @@ description: TRANSCRIPT is a seasonal magazine, featuring literary essays, short
 
   {% image "./src/assets/images/transcript-issue-one-0.jpg", "Opening pages of Issue One, featuring an essay on memory and place" %}
 
+  <div class="photo-gallery">
+    {% image "./src/assets/images/transcript-issue-one-1.jpg", "Detail of the opening spread" %}
+    {% image "./src/assets/images/transcript-issue-one-2.jpg", "Poetry section, pages 12–13" %}
+    {% image "./src/assets/images/transcript-issue-one-3.jpg", "Illustration by Thomas & Jurgen" %}
+    {% image "./src/assets/images/transcript-issue-one-4.jpg", "Short story excerpt" %}
+  </div>
+
   <p>
     <em>ISSUE ONE</em> was presented at <a href="https://perdu.nl/agenda/journal-launch-transcript-issue-one/?ref=transcriptmag.store" rel="external" target="_blank">Perdu</a> in Amsterdam. Daniël van der Winden provided an introduction to the magazine, Iris Cuppen shared the story we printed of hers, and Charlie Jermyn read the work that led up the travelogue he submitted to us.
   </p>
@@ -32,10 +39,6 @@ description: TRANSCRIPT is a seasonal magazine, featuring literary essays, short
     {% image "./src/assets/images/transcript-issue-one-2.jpg", "Poetry section, pages 12–13" %}
     {% image "./src/assets/images/transcript-issue-one-3.jpg", "Illustration by Thomas & Jurgen" %}
     {% image "./src/assets/images/transcript-issue-one-4.jpg", "Short story excerpt" %}
-    {% image "./src/assets/images/transcript-issue-one-5.jpg", "Visual contribution by Ezekiel Aquino" %}
-    {% image "./src/assets/images/transcript-issue-one-6.jpg", "Essay conclusion, pages 44–45" %}
-    {% image "./src/assets/images/transcript-issue-one-7.jpg", "Typography detail" %}
-    {% image "./src/assets/images/transcript-issue-one-8.jpg", "Back cover design" %}
   </div>
 </div>
 

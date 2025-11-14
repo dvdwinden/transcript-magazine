@@ -161,6 +161,10 @@ h2.subtitle {
     margin-right: auto;
 }
 
+.issue > p:has(picture) {
+    max-width: var(--width-wide);
+}
+
 .issue h2 {
     font-size: clamp(1.25rem, 1.25rem + 0.75vw, 2rem);
     font-weight: 300;
@@ -265,6 +269,7 @@ img:hover {
     margin: var(--spacing-lg) 0;
     border-radius: var(--radius-sm);
     overflow: hidden;
+    max-width: var(--width-wide);
 }
 
 .photo-gallery {

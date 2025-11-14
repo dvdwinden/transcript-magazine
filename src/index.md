@@ -17,7 +17,7 @@ description: TRANSCRIPT is a seasonal magazine, featuring literary essays, short
 
 <p><em>TRANSCRIPT</em> &nbsp;was born out of a desire to create a written and visual record of things. To capture what has been said, or what roughly has been said. To copy what we hear, so we can hear again. To create an echo. Or as Georges Perec wrote in <em>Species of Spaces</em> (1973): “to write: to try meticulously to retain something, to cause something to survive; to wrest a few precise scraps from the void as it grows, to leave somewhere a furrow, a trace, a mark or a few signs”.</p>
 <p>Over the course of two years we created four issues, one for every season, featuring a variety of work by writers and visual artists: essays, short stories, travelogues, poetry, illustrations, and photography.</p>
-<div class="issue">
+<div class="issue" id="issue-one">
   <h2>ISSUE ONE</h2>
   <p>Mutant turnips, unkempt hedges, herring rolls, touching fingers, fentanyl blasters, fuzzy pets, lumpy landscapes, yellow stockings, forbidden fruits, cigarette tips, and more: our first issue featured a travelogue by <a href="https://www.ciaolemagne.com/?ref=transcriptmag.store" title="Charlie Jermyn" rel="external" target="_blank">Charlie Jermyn</a>, a story by <a href="https://www.iriscuppen.com/?ref=transcriptmag.store" title="Iris Cuppen" rel="external" target="_blank">Iris Cuppen</a>, an essay by <a href="https://www.daniel.pizza/?ref=transcriptmag.store" title="Daniël van der Winden" rel="external" target="_blank">Daniël van der Winden</a>, and visual work by <a href="https://ezekielaquino.com/?ref=transcriptmag.store" title="Ezekiel Aquino" rel="external" target="_blank">Ezekiel Aquino</a> and <a href="https://www.thomasenjurgen.nl/?ref=transcriptmag.store" title="Thomas & Jurgen" rel="external" target="_blank">Thomas & Jurgen</a>.</p>
 
@@ -49,7 +49,7 @@ description: TRANSCRIPT is a seasonal magazine, featuring literary essays, short
   </div>
 </div>
 
-<div class="issue-section">
+<div class="issue-section" id="issue-two">
   <h2>ISSUE TWO</h2>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
   <p><a href="#" class="button">Read Issue Two</a></p>
@@ -63,7 +63,7 @@ description: TRANSCRIPT is a seasonal magazine, featuring literary essays, short
   </div>
 </div>
 
-<div class="issue-section">
+<div class="issue-section" id="issue-three">
   <h2>ISSUE THREE</h2>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
   <p><a href="#" class="button">Read Issue Three</a></p>
@@ -77,7 +77,7 @@ description: TRANSCRIPT is a seasonal magazine, featuring literary essays, short
   </div>
 </div>
 
-<div class="issue-section">
+<div class="issue-section" id="issue-four">
   <h2>ISSUE FOUR</h2>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
   <p><a href="#" class="button">Read Issue Four</a></p>

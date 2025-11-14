@@ -276,6 +276,12 @@ img:hover {
     max-width: var(--width-wide);
 }
 
+.issue video {
+    margin-top: var(--spacing-lg);
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+}
+
 .photo-gallery {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

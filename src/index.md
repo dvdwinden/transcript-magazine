@@ -21,7 +21,9 @@ description: TRANSCRIPT is a seasonal magazine, featuring literary essays, short
   <h2>ISSUE ONE</h2>
   <p>Mutant turnips, unkempt hedges, herring rolls, touching fingers, fentanyl blasters, fuzzy pets, lumpy landscapes, yellow stockings, forbidden fruits, cigarette tips, and more: our first issue featured a travelogue by <a href="https://www.ciaolemagne.com/?ref=transcriptmag.store" title="Charlie Jermyn" rel="external" target="_blank">Charlie Jermyn</a>, a story by <a href="https://www.iriscuppen.com/?ref=transcriptmag.store" title="Iris Cuppen" rel="external" target="_blank">Iris Cuppen</a>, an essay by <a href="https://www.daniel.pizza/?ref=transcriptmag.store" title="Daniël van der Winden" rel="external" target="_blank">Daniël van der Winden</a>, and visual work by <a href="https://ezekielaquino.com/?ref=transcriptmag.store" title="Ezekiel Aquino" rel="external" target="_blank">Ezekiel Aquino</a> and <a href="https://www.thomasenjurgen.nl/?ref=transcriptmag.store" title="Thomas & Jurgen" rel="external" target="_blank">Thomas & Jurgen</a>.</p>
 
-  {% image "./src/assets/images/transcript-spread.jpg", "Opening pages of Issue One, featuring an essay on memory and place" %}
+  <video autoplay loop muted playsinline>
+    <source src="/assets/images/issue-one/transcript-issue-one-video.mp4" type="video/mp4">
+  </video>
 
   <div class="photo-gallery">
     {% image "./src/assets/images/issue-one/transcript-issue-one-01.jpg", "Miniature Suns (Iris Cuppen)" %}
@@ -38,6 +40,8 @@ description: TRANSCRIPT is a seasonal magazine, featuring literary essays, short
   </p>
   <p>We printed 100 copies, and they sold out shortly after.
   <div class="photo-gallery">
+    {% image "./src/assets/images/transcript-spread.jpg", "Caption goes here" %}
+    {% image "./src/assets/images/transcript-spread.jpg", "Caption goes here" %}
     {% image "./src/assets/images/transcript-spread.jpg", "Caption goes here" %}
     {% image "./src/assets/images/transcript-spread.jpg", "Caption goes here" %}
     {% image "./src/assets/images/transcript-spread.jpg", "Caption goes here" %}

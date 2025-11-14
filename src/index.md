@@ -9,11 +9,9 @@ description: TRANSCRIPT is a seasonal magazine, featuring literary essays, short
 </div>
 
 <div class="container prose">
-<h2>A seasonal magazine, featuring literary essays, short stories, poetry, and everything in-between.</h2>
+<h2 class="subtitle">A seasonal magazine, featuring literary essays, short stories, poetry, and everything in-between.</h2>
 
-<div class="bookmark">
-  {% image "./src/assets/images/bookmark.png", "TRANSCRIPT bookmark" %}
-</div>
+{% image "./src/assets/images/transcript-card.png", "TRANSCRIPT postcard, printed for Mag to Mag, festival for independent magazines in Milan", "100vw", "max-w-460" %}
 
 <div class="issue-section">
   <h2>ISSUE ONE</h2>

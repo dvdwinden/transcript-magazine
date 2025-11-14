@@ -20,11 +20,12 @@
     --line-height-caption: 1.5;
     
     --spacing-xs: 1rem;
-    --spacing-sm: 1.5rem;
-    --spacing-md: 3rem;
-    --spacing-lg: 4rem;
+    --spacing-sm: 2rem;
+    --spacing-md: 4rem;
+    --spacing-lg: 8rem;
+    --spacing-xl: 16rem;
     
-    --width-narrow: 720px;
+    --width-narrow: 520px;
     --width-wide: 1200px;
     
     --radius-sm: 3px;
@@ -99,16 +100,16 @@ h2.subtitle {
     font-weight: 300;
     letter-spacing: 0.03em;
     margin-bottom: 1rem;
-    font-size: clamp(1rem, 1rem + 0.5vw, 1.5rem);
+    font-size: clamp(1.125rem, 1.125rem + 0.5vw, 1.5rem);
     text-align: center;
     max-width: 45ch;
     text-wrap: balance;
 }
 
-.issue-section h1,
-.issue-section h2,
-.issue-section h3,
-.issue-section h4 {
+.issue h1,
+.issue h2,
+.issue h3,
+.issue h4 {
     text-wrap: balance;
 }
 
@@ -124,26 +125,31 @@ h2.subtitle {
     margin-right: auto;
 }
 
-.issue-section {
+.prose {
+    font-variant-numeric: oldstyle-nums;
+}
+
+.issue {
+    margin-top: var(--spacing-xl);
     margin-bottom: var(--spacing-lg);
     padding-bottom: var(--spacing-lg);
     border-bottom: 1px solid var(--color-border);
     max-width: var(--width-wide);
 }
 
-.issue-section:last-of-type {
+.issue:last-of-type {
     border-bottom: none;
 }
 
-.issue-section > h2,
-.issue-section > p {
+.issue > h2,
+.issue > p {
     max-width: var(--width-narrow);
     margin-left: auto;
     margin-right: auto;
 }
 
-.issue-section h1,
-.issue-section h2 {
+.issue h1,
+.issue h2 {
     /* Scale with viewport; ~32-36px typically */
     font-size: clamp(1.75rem, 1.25rem + 1.5vw, 2.25rem);
     font-weight: 300;
@@ -151,7 +157,7 @@ h2.subtitle {
     letter-spacing: 0.03em;
 }
 
-.issue-section p {
+.issue p {
     margin-bottom: var(--spacing-sm);
     line-height: var(--line-height-body);
 }
@@ -171,6 +177,21 @@ h2.subtitle {
 
 .button:hover {
     background-color: #444;
+}
+
+.postcard {
+    max-width: 520px;
+    margin: 0 auto;
+    margin-top: var(--spacing-lg);
+    margin-bottom: var(--spacing-xl);
+    text-align: center;
+}
+
+.postcard img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 .bookmark {
@@ -227,7 +248,7 @@ img:hover {
     font-size: 0.875rem;
 }
 
-.issue-section picture {
+.issue picture {
     display: block;
     margin: var(--spacing-lg) 0;
     border-radius: var(--radius-sm);

@@ -11,9 +11,12 @@ description: TRANSCRIPT is a seasonal magazine, featuring literary essays, short
 <div class="container prose">
 <h2 class="subtitle">A seasonal magazine, featuring literary essays, short stories, poetry, and everything in-between.</h2>
 
-{% image "./src/assets/images/transcript-card.png", "TRANSCRIPT postcard, printed for Mag to Mag, festival for independent magazines in Milan", "100vw", "max-w-460" %}
+<div class="postcard">
+  {% image "./src/assets/images/transcript-card.png", "TRANSCRIPT postcard, printed for Mag to Mag, festival for independent magazines in Milan" %}
+</div>
 
-<div class="issue-section">
+<p><em>TRANSCRIPT</em> &nbsp;was born out of a desire to create a written and visual record of things. To capture what has been said, or what roughly has been said. To copy what we hear, so we can hear again. To create an echo. Or as Georges Perec wrote in <em>Species of Spaces</em> (1973): “to write: to try meticulously to retain something, to cause something to survive; to wrest a few precise scraps from the void as it grows, to leave somewhere a furrow, a trace, a mark or a few signs”.</p>
+<div class="issue">
   <h2>ISSUE ONE</h2>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
   <p><a href="#" class="button">Read Issue One</a></p>

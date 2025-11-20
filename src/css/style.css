@@ -399,7 +399,10 @@ img:hover {
     color: var(--color-bg);
     font-size: var(--font-size-caption);
     font-style: italic;
-    margin-top: var(--spacing-xs);
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
     max-width: 90%;
     text-align: center;
     line-height: var(--line-height-caption);

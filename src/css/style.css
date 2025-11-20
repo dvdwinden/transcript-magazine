@@ -334,6 +334,7 @@ img:hover {
     font-weight: 700;
     flex-shrink: 0;
     margin-right: var(--spacing-xs);
+    max-width: 50%;
 }
 
 .contributors-list .piece {

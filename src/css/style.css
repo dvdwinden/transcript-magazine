@@ -420,7 +420,6 @@ img:hover {
     right: 2rem;
     width: var(--spacing-md);
     height: var(--spacing-md);
-    background: rgba(255, 255, 255, 0.9);
     border: none;
     border-radius: 50%;
     cursor: pointer;
@@ -428,13 +427,13 @@ img:hover {
     align-items: center;
     justify-content: center;
     font-size: 1.5rem;
-    color: var(--color-text);
+    color: var(--color-bg);
     z-index: 1001;
     transition: background var(--transition-speed);
 }
 
 .lightbox-close:hover {
-    background: var(--color-bg);
+    opacity: 0.6;
 }
 
 /* Footer */

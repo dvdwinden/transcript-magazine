@@ -308,6 +308,39 @@ img:hover {
     margin-bottom: 0;
 }
 
+/* Contributors list */
+.contributors-list {
+    list-style: none;
+    padding: 0;
+    margin: var(--spacing-md) auto;
+    max-width: var(--width-narrow);
+}
+
+.contributors-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 4px 0 12px 0;
+    width: 100%;
+    border-bottom: 1px dotted var(--color-border);
+    padding-inline-start: 0;
+}
+
+.contributors-list li:last-child {
+    border-bottom: none;
+}
+
+.contributors-list .author {
+    font-weight: 700;
+    flex-shrink: 0;
+    margin-right: var(--spacing-xs);
+}
+
+.contributors-list .piece {
+    text-align: right;
+    flex-grow: 1;
+}
+
 /* Lightbox styles */
 .lightbox {
     display: none;

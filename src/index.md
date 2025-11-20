@@ -19,7 +19,34 @@ description: TRANSCRIPT is a seasonal magazine, featuring literary essays, short
 <p>Over the course of two years we created four issues, one for every season, featuring a variety of work by writers and visual artists: essays, short stories, travelogues, poetry, illustrations, and photography.</p>
 <div class="issue" id="issue-one">
   <h2>ISSUE ONE</h2>
-  <p>Mutant turnips, unkempt hedges, herring rolls, touching fingers, fentanyl blasters, fuzzy pets, lumpy landscapes, yellow stockings, forbidden fruits, cigarette tips, and more: our first issue featured a travelogue by <a href="https://www.ciaolemagne.com/?ref=transcriptmag.store" title="Charlie Jermyn" rel="external" target="_blank">Charlie Jermyn</a>, a story by <a href="https://www.iriscuppen.com/?ref=transcriptmag.store" title="Iris Cuppen" rel="external" target="_blank">Iris Cuppen</a>, an essay by <a href="https://www.daniel.pizza/?ref=transcriptmag.store" title="Daniël van der Winden" rel="external" target="_blank">Daniël van der Winden</a>, and visual work by <a href="https://ezekielaquino.com/?ref=transcriptmag.store" title="Ezekiel Aquino" rel="external" target="_blank">Ezekiel Aquino</a> and <a href="https://www.thomasenjurgen.nl/?ref=transcriptmag.store" title="Thomas & Jurgen" rel="external" target="_blank">Thomas & Jurgen</a>.</p>
+  <p>Mutant turnips, unkempt hedges, herring rolls, touching fingers, fentanyl blasters, fuzzy pets, lumpy landscapes, yellow stockings, forbidden fruits, cigarette tips, and more: our first issue featured a travelogue by <a href="https://www.ciaolemagne.com/?ref=transcriptmag.store" title="Charlie Jermyn" rel="external" target="_blank">Charlie Jermyn</a>, poetry by <a href="http://studioyave.com" title="Yasmin Veenman" rel="external" target="_blank">Yasmin Veenman</a>, a story by <a href="https://www.iriscuppen.com/?ref=transcriptmag.store" title="Iris Cuppen" rel="external" target="_blank">Iris Cuppen</a>, an essay by <a href="https://www.daniel.pizza/?ref=transcriptmag.store" title="Daniël van der Winden" rel="external" target="_blank">Daniël van der Winden</a>, and visual work by <a href="https://ezekielaquino.com/?ref=transcriptmag.store" title="Ezekiel Aquino" rel="external" target="_blank">Ezekiel Aquino</a> and <a href="https://www.thomasenjurgen.nl/?ref=transcriptmag.store" title="Thomas & Jurgen" rel="external" target="_blank">Thomas & Jurgen</a>.</p>
+
+  <ul class="contributors-list">
+    <li>
+      <span class="author">Ezekiel Aquino</span>
+      <span class="piece">Reverberations (Ondine)</span>
+    </li>
+    <li>
+      <span class="author">Iris Cuppen</span>
+      <span class="piece">Miniature Suns</span>
+    </li>
+    <li>
+      <span class="author">Charlie Jermyn</span>
+      <span class="piece">Elsewhere, walking in the peatlands</span>
+    </li>
+    <li>
+      <span class="author">Thomas & Jurgen</span>
+      <span class="piece">Taxa</span>
+    </li>
+    <li>
+      <span class="author">Yasmin Veenman</span>
+      <span class="piece">Laat eens vallen</span>
+    </li>
+    <li>
+      <span class="author">Daniël van der Winden</span>
+      <span class="piece">Lest I Forget</span>
+    </li>
+  </ul>
 
   <video autoplay loop muted playsinline>
     <source src="/assets/images/issue-one/transcript-issue-one-video.mp4" type="video/mp4">

@@ -129,6 +129,16 @@ description: TRANSCRIPT is a seasonal magazine, featuring literary essays, short
     The presentation of <em>ISSUE TWO</em> took place at <a href="https://perdu.nl/en/agenda/presentation-transcript-2//?ref=transcriptmag.store" rel="external" target="_blank">Perdu</a> in Amsterdam, in January of 2025. Iris Cuppen gave an introduction to the magazine, outlining its traces back to Georges Perec. Maia Kenney read her essay, and Daniël van der Winden read a story.
   </p>
   <p>We printed 200 copies of this issue, and have a few available, still.</p>
+
+  <h3>Buy ISSUE TWO · €17</h3>
+  <p>Shipping once per week within The Netherlands, to select countries in mainland Europe, and to the United Kingdom. For pick-ups in Amsterdam or Rotterdam, we'll reach out to you to coordinate after you've placed your order.</p>
+  
+  <div class="button-group">
+    <a href="https://buy.stripe.com/5kA14u0dJgNsgKs7sE" class="button" rel="external" target="_blank">The Netherlands</a>
+    <a href="https://buy.stripe.com/5kA8wW3pV54KeCk9AL" class="button" rel="external" target="_blank">Europe & UK</a>
+    <a href="https://buy.stripe.com/4gw4gGe4z9l03XGfZ8" class="button" rel="external" target="_blank">Pick-up</a>
+  </div>
+
   <div class="photo-gallery">
     {% image "./src/assets/images/issue-one/transcript-issue-one-event-01.png", "Charlie Jermyn" %}
     {% image "./src/assets/images/issue-one/transcript-issue-one-event-02.png", "TRANSCRIPT ISSUE ONE at Perdu" %}

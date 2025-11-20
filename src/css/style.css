@@ -367,7 +367,7 @@ img:hover {
     max-width: 50%;
 }
 
-.contributors-list .piece {
+.contributors-list .title {
     text-align: right;
     flex-grow: 1;
 }

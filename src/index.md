@@ -126,9 +126,9 @@ description: TRANSCRIPT is a seasonal magazine, featuring literary essays, short
   </div>
 
   <p>
-    The presentation of <em>ISSUE TWO</em> took place at <a href="https://perdu.nl/en/agenda/presentation-transcript-2//?ref=transcriptmag.store" rel="external" target="_blank">Perdu</a> in Amsterdam, in January of 2025. Iris Cuppen gave an introduction to the magazine, outlining its traces back to Georges Perec. Maia Kenney read her essay, and Daniël van der Winden read a story.
+    The presentation of <em>ISSUE TWO</em> took place at <a href="https://perdu.nl/en/agenda/presentation-transcript-2//?ref=transcriptmag.store" rel="external" target="_blank">Perdu</a> in Amsterdam, in January of 2025. Iris Cuppen gave an introduction to the magazine, outlining how it found its inspiration in the work of Georges Perec. Maia Kenney read her essay, and Daniël van der Winden read his story.
   </p>
-  <p>We printed 200 copies of this issue, and have a few available, still.</p>
+  <p>A few copies of this issue are available still.</p>
 
   <h3>Buy ISSUE TWO · €17</h3>
   <p>Shipping once per week within The Netherlands, to select countries in mainland Europe, and to the United Kingdom. For pick-ups in Amsterdam or Rotterdam, we'll reach out to you to coordinate after you've placed your order.</p>
@@ -140,15 +140,15 @@ description: TRANSCRIPT is a seasonal magazine, featuring literary essays, short
   </div>
 
   <div class="photo-gallery">
-    {% image "./src/assets/images/issue-one/transcript-issue-one-event-01.png", "Charlie Jermyn" %}
-    {% image "./src/assets/images/issue-one/transcript-issue-one-event-02.png", "TRANSCRIPT ISSUE ONE at Perdu" %}
-    {% image "./src/assets/images/issue-one/transcript-issue-one-event-03.png", "TRANSCRIPT ISSUE ONE at Perdu" %}
-    {% image "./src/assets/images/issue-one/transcript-issue-one-event-04.png", "TRANSCRIPT ISSUE ONE at Perdu" %}
-    {% image "./src/assets/images/issue-one/transcript-issue-one-event-05.png", "TRANSCRIPT ISSUE ONE at Perdu" %}
-    {% image "./src/assets/images/issue-one/transcript-issue-one-event-06.png", "Iris Cuppen and Daniël van der Winden" %}
+    {% image "./src/assets/images/issue-two/transcript-issue-two-event-01.png", "Iris Cuppen, and Georges Perec" %}
+    {% image "./src/assets/images/issue-two/transcript-issue-two-event-02.png", "TRANSCRIPT ISSUE TWO at Perdu" %}
+    {% image "./src/assets/images/issue-two/transcript-issue-two-event-03.png", "Maia Kenney" %}
+    {% image "./src/assets/images/issue-two/transcript-issue-two-event-04.png", "TRANSCRIPT ISSUE TWO at Perdu" %}
+    {% image "./src/assets/images/issue-two/transcript-issue-two-event-05.png", "Daniël van der Winden" %}
+    {% image "./src/assets/images/issue-two/transcript-issue-two-event-06.png", "TRANSCRIPT ISSUE TWO at Perdu" %}
   </div>
 </div>
-<div class="issue-section" id="issue-three">
+<div class="issue" id="issue-three">
   <h2>ISSUE THREE</h2>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
   <p><a href="#" class="button">Read Issue Three</a></p>
@@ -162,7 +162,7 @@ description: TRANSCRIPT is a seasonal magazine, featuring literary essays, short
   </div>
 </div>
 
-<div class="issue-section" id="issue-four">
+<div class="issue" id="issue-four">
   <h2>ISSUE FOUR</h2>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
   <p><a href="#" class="button">Read Issue Four</a></p>

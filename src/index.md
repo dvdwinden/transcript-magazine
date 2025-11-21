@@ -193,6 +193,9 @@ description: TRANSCRIPT is a seasonal magazine, featuring literary essays, short
     {% image "./src/assets/images/issue-two/transcript-issue-two-event-06.png", "TRANSCRIPT ISSUE TWO at Perdu" %}
   </div>
 
+  <p>
+    The presentation of <em>ISSUE THREE</em> took place at <a href="https://perdu.nl/?ref=transcriptmag.store" rel="external" target="_blank">Perdu</a> in Amsterdam, in April of 2025. Hunter A. Allund read from their work, and Micha Zaat gave a talk about crossing borders.
+  </p>
   <p>ISSUE THREE is available to order now.</p>
 
   <h3>Buy ISSUE THREE · €17</h3>
@@ -202,6 +205,15 @@ description: TRANSCRIPT is a seasonal magazine, featuring literary essays, short
     <a href="https://buy.stripe.com/14k8wW6C79l08dW6oD" class="button" rel="external" target="_blank">The Netherlands</a>
     <a href="https://buy.stripe.com/dR64gGaSneFkdyg5kA" class="button" rel="external" target="_blank">Europe & UK</a>
     <a href="https://buy.stripe.com/3csbJ8aSn9l065O8wO" class="button" rel="external" target="_blank">Pick-up</a>
+  </div>
+
+  <div class="photo-gallery">
+    {% image "./src/assets/images/issue-two/transcript-issue-two-event-01.png", "Iris Cuppen, and Georges Perec" %}
+    {% image "./src/assets/images/issue-two/transcript-issue-two-event-02.png", "TRANSCRIPT ISSUE TWO at Perdu" %}
+    {% image "./src/assets/images/issue-two/transcript-issue-two-event-03.png", "Maia Kenney" %}
+    {% image "./src/assets/images/issue-two/transcript-issue-two-event-04.png", "TRANSCRIPT ISSUE TWO at Perdu" %}
+    {% image "./src/assets/images/issue-two/transcript-issue-two-event-05.png", "Daniël van der Winden" %}
+    {% image "./src/assets/images/issue-two/transcript-issue-two-event-06.png", "TRANSCRIPT ISSUE TWO at Perdu" %}
   </div>
 </div>
 
@@ -250,6 +262,9 @@ description: TRANSCRIPT is a seasonal magazine, featuring literary essays, short
     {% image "./src/assets/images/issue-two/transcript-issue-two-event-06.png", "TRANSCRIPT ISSUE TWO at Perdu" %}
   </div>
 
+  <p>
+    The presentation of <em>ISSUE FOUR</em> took place at <a href="https://perdu.nl/?ref=transcriptmag.store" rel="external" target="_blank">Perdu</a> in Amsterdam, in October of 2025. Iris Cuppen and Daniël van der Winden shared their correspondence, and Jan van Tienen spoke about collecting.
+  </p>
   <p>ISSUE FOUR is available now.</p>
 
   <h3>Buy ISSUE FOUR · €18</h3>
@@ -259,6 +274,15 @@ description: TRANSCRIPT is a seasonal magazine, featuring literary essays, short
     <a href="https://buy.stripe.com/bIe00q0uqdhc4cl6oN" class="button" rel="external" target="_blank">The Netherlands</a>
     <a href="https://buy.stripe.com/7sY14o1yufpF10927x" class="button" rel="external" target="_blank">Europe & UK</a>
     <a href="https://buy.stripe.com/8x2eVe0uq0uLaAJ13t" class="button" rel="external" target="_blank">Pick-up</a>
+  </div>
+
+  <div class="photo-gallery">
+    {% image "./src/assets/images/issue-two/transcript-issue-two-event-01.png", "Iris Cuppen, and Georges Perec" %}
+    {% image "./src/assets/images/issue-two/transcript-issue-two-event-02.png", "TRANSCRIPT ISSUE TWO at Perdu" %}
+    {% image "./src/assets/images/issue-two/transcript-issue-two-event-03.png", "Maia Kenney" %}
+    {% image "./src/assets/images/issue-two/transcript-issue-two-event-04.png", "TRANSCRIPT ISSUE TWO at Perdu" %}
+    {% image "./src/assets/images/issue-two/transcript-issue-two-event-05.png", "Daniël van der Winden" %}
+    {% image "./src/assets/images/issue-two/transcript-issue-two-event-06.png", "TRANSCRIPT ISSUE TWO at Perdu" %}
   </div>
 </div>
 </div>

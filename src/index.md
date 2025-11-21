@@ -150,29 +150,115 @@ description: TRANSCRIPT is a seasonal magazine, featuring literary essays, short
 </div>
 <div class="issue" id="issue-three">
   <h2>ISSUE THREE</h2>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-  <p><a href="#" class="button">Read Issue Three</a></p>
-  {% image "./src/assets/images/transcript-spread.jpg", "Issue Three cover featuring work by Bernke Klein Zandvoort" %}
-  <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <p>Slides and laser stares, upside-down kisses, visual snow syndrome, Mondrian, notebooks and hallucinations, Serbian border patrol officers, hearts beating overtime, grapes and Slothpocalypse.</p>
+  <p>Our third issue featured two short stories by Hunter A. Allund, poetry by Julie Peters, and essays by Luuk Vulkers and Micha Zaat. Visual contributions by Bernke Klein Zandvoort and Gabriël Kousbroek.</p>
+
+  <ul class="contributors-list">
+    <li>
+      <span class="author">Hunter A. Allund</span>
+      <span class="title">Interviewing previous selves</span>
+    </li>
+    <li>
+      <span class="author">Bernke Klein Zandvoort</span>
+      <span class="title">Optic Eclipse</span>
+    </li>
+    <li>
+      <span class="author">Gabriël Kousbroek</span>
+      <span class="title">Ringband Boogie No. 3</span>
+    </li>
+    <li>
+      <span class="author">Julie Peters</span>
+      <span class="title">Variations on my notes app</span>
+    </li>
+    <li>
+      <span class="author">Luuk Vulkers</span>
+      <span class="title">Absolutely Nothing at All</span>
+    </li>
+    <li>
+      <span class="author">Micha Zaat</span>
+      <span class="title">On Crossing Borders with Isa</span>
+    </li>
+  </ul>
+
+  <video autoplay loop muted playsinline>
+    <source src="/assets/images/issue-one/transcript-issue-one-video.mp4" type="video/mp4">
+  </video>
+
   <div class="photo-gallery">
-    {% image "./src/assets/images/transcript-spread.jpg", "Caption goes here" %}
-    {% image "./src/assets/images/transcript-spread.jpg", "Caption goes here" %}
-    {% image "./src/assets/images/transcript-spread.jpg", "Caption goes here" %}
-    {% image "./src/assets/images/transcript-spread.jpg", "Caption goes here" %}
+    {% image "./src/assets/images/issue-two/transcript-issue-two-event-01.png", "Iris Cuppen, and Georges Perec" %}
+    {% image "./src/assets/images/issue-two/transcript-issue-two-event-02.png", "TRANSCRIPT ISSUE TWO at Perdu" %}
+    {% image "./src/assets/images/issue-two/transcript-issue-two-event-03.png", "Maia Kenney" %}
+    {% image "./src/assets/images/issue-two/transcript-issue-two-event-04.png", "TRANSCRIPT ISSUE TWO at Perdu" %}
+    {% image "./src/assets/images/issue-two/transcript-issue-two-event-05.png", "Daniël van der Winden" %}
+    {% image "./src/assets/images/issue-two/transcript-issue-two-event-06.png", "TRANSCRIPT ISSUE TWO at Perdu" %}
+  </div>
+
+  <p>ISSUE THREE is available to order now.</p>
+
+  <h3>Buy ISSUE THREE · €17</h3>
+  <p>Shipping once per week within The Netherlands, to select countries in mainland Europe, and to the United Kingdom. For pick-ups in Amsterdam or Rotterdam, we'll reach out to you to coordinate after you've placed your order.</p>
+  
+  <div class="button-group">
+    <a href="https://buy.stripe.com/14k8wW6C79l08dW6oD" class="button" rel="external" target="_blank">The Netherlands</a>
+    <a href="https://buy.stripe.com/dR64gGaSneFkdyg5kA" class="button" rel="external" target="_blank">Europe & UK</a>
+    <a href="https://buy.stripe.com/3csbJ8aSn9l065O8wO" class="button" rel="external" target="_blank">Pick-up</a>
   </div>
 </div>
 
 <div class="issue" id="issue-four">
   <h2>ISSUE FOUR</h2>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-  <p><a href="#" class="button">Read Issue Four</a></p>
-  {% image "./src/assets/images/transcript-spread.jpg", "Issue Four opening with visual work by Ade Hanft" %}
-  <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <p>Postcards arriving in Madrid, the joys and perils of collecting, a dance across a train station concourse, observations in British thrift shops.</p>
+  <p>ISSUE FOUR contains a wide range of work: an essay by Jan van Tienen, stories by Andrea Chapela and Nicholas Jeeves, poetry by Ella Frears, and a correspondence between <a href="https://www.iriscuppen.com/?ref=transcriptmag.store" title="Iris Cuppen" rel="external" target="_blank">Iris Cuppen</a> and <a href="https://www.daniel.pizza/?ref=transcriptmag.store" title="Daniël van der Winden" rel="external" target="_blank">Daniël van der Winden</a>. Visual work by Adrian Hanft.</p>
+
+  <ul class="contributors-list">
+    <li>
+      <span class="author">Andrea Chapela</span>
+      <span class="title">Madrid, 28006</span>
+    </li>
+    <li>
+      <span class="author">Ella Frears</span>
+      <span class="title">Venture Naturalist & Come si dice</span>
+    </li>
+    <li>
+      <span class="author">Adrian Hanft</span>
+      <span class="title">Moth In Flight On Receipts</span>
+    </li>
+    <li>
+      <span class="author">Nicholas Jeeves</span>
+      <span class="title">Happy to be Here</span>
+    </li>
+    <li>
+      <span class="author">Jan van Tienen</span>
+      <span class="title">We Should All Be Collectors</span>
+    </li>
+    <li>
+      <span class="author">Iris Cuppen & Daniël van der Winden</span>
+      <span class="title">Correspondence</span>
+    </li>
+  </ul>
+
+  <video autoplay loop muted playsinline>
+    <source src="/assets/images/issue-one/transcript-issue-one-video.mp4" type="video/mp4">
+  </video>
+
   <div class="photo-gallery">
-    {% image "./src/assets/images/transcript-spread.jpg", "Caption goes here" %}
-    {% image "./src/assets/images/transcript-spread.jpg", "Caption goes here" %}
-    {% image "./src/assets/images/transcript-spread.jpg", "Caption goes here" %}
-    {% image "./src/assets/images/transcript-spread.jpg", "Caption goes here" %}
+    {% image "./src/assets/images/issue-two/transcript-issue-two-event-01.png", "Iris Cuppen, and Georges Perec" %}
+    {% image "./src/assets/images/issue-two/transcript-issue-two-event-02.png", "TRANSCRIPT ISSUE TWO at Perdu" %}
+    {% image "./src/assets/images/issue-two/transcript-issue-two-event-03.png", "Maia Kenney" %}
+    {% image "./src/assets/images/issue-two/transcript-issue-two-event-04.png", "TRANSCRIPT ISSUE TWO at Perdu" %}
+    {% image "./src/assets/images/issue-two/transcript-issue-two-event-05.png", "Daniël van der Winden" %}
+    {% image "./src/assets/images/issue-two/transcript-issue-two-event-06.png", "TRANSCRIPT ISSUE TWO at Perdu" %}
+  </div>
+
+  <p>ISSUE FOUR is available now.</p>
+
+  <h3>Buy ISSUE FOUR · €18</h3>
+  <p>Shipping once per week within The Netherlands, to select countries in mainland Europe, and to the United Kingdom. For pick-ups in Amsterdam or Rotterdam, we'll reach out to you to coordinate after you've placed your order.</p>
+  
+  <div class="button-group">
+    <a href="https://buy.stripe.com/bIe00q0uqdhc4cl6oN" class="button" rel="external" target="_blank">The Netherlands</a>
+    <a href="https://buy.stripe.com/7sY14o1yufpF10927x" class="button" rel="external" target="_blank">Europe & UK</a>
+    <a href="https://buy.stripe.com/8x2eVe0uq0uLaAJ13t" class="button" rel="external" target="_blank">Pick-up</a>
   </div>
 </div>
 </div>

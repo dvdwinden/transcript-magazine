@@ -13,6 +13,23 @@
         <div class="sticky-header-content">
             <img src="/assets/images/transcript-magazine-black.svg" alt="TRANSCRIPT Magazine" class="sticky-logo" />
             <span class="sticky-issue-name"></span>
+            <div class="buy-menu">
+                <button class="buy-button" id="buy-button" aria-label="Buy issues">Buy</button>
+                <div class="buy-popover" id="buy-popover">
+                <a href="#issue-one" class="buy-popover-item disabled" data-tooltip="Sold out">
+                    <span>ISSUE ONE</span>
+                </a>
+                <a href="#issue-two" class="buy-popover-item">
+                    <span>ISSUE TWO</span>
+                </a>
+                <a href="#issue-three" class="buy-popover-item">
+                    <span>ISSUE THREE</span>
+                </a>
+                <a href="#issue-four" class="buy-popover-item">
+                    <span>ISSUE FOUR</span>
+                </a>
+                </div>
+            </div>
         </div>
     </header>
     <main role="main">
@@ -171,6 +188,23 @@
 
         window.addEventListener('scroll', updateStickyHeader);
         window.addEventListener('load', updateStickyHeader);
+
+        // Smooth scroll for buy menu items
+        document.querySelectorAll('.buy-popover-item:not(.disabled)').forEach(item => {
+            item.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetId = item.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Prevent disabled item clicks
+        document.querySelector('.buy-popover-item.disabled')?.addEventListener('click', (e) => {
+            e.preventDefault();
+        });
     </script>
 </body>
 </html>

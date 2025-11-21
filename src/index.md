@@ -48,6 +48,8 @@ description: TRANSCRIPT is a seasonal magazine, featuring literary essays, short
     </li>
   </ul>
 
+  <p class="buy-link-wrapper"><span class="buy-link disabled">Sold out</span></p>
+
   <video autoplay loop muted playsinline>
     <source src="/assets/images/issue-one/transcript-issue-one-video.mp4" type="video/mp4">
   </video>
@@ -111,6 +113,8 @@ description: TRANSCRIPT is a seasonal magazine, featuring literary essays, short
       <span class="title">Murmurs</span>
   </ul>
 
+  <p class="buy-link-wrapper"><a href="#issue-two-buy" class="buy-link">Buy</a></p>
+
   <video autoplay loop muted playsinline>
     <source src="/assets/images/issue-one/transcript-issue-one-video.mp4" type="video/mp4">
   </video>
@@ -130,7 +134,7 @@ description: TRANSCRIPT is a seasonal magazine, featuring literary essays, short
   </p>
   <p>A few copies of this issue are available still.</p>
 
-  <h3>Buy ISSUE TWO · €17</h3>
+  <h3 id="issue-two-buy">Buy ISSUE TWO · €17</h3>
   <p>Shipping once per week within The Netherlands, to select countries in mainland Europe, and to the United Kingdom. For pick-ups in Amsterdam or Rotterdam, we'll reach out to you to coordinate after you've placed your order.</p>
   
   <div class="button-group">
@@ -180,6 +184,8 @@ description: TRANSCRIPT is a seasonal magazine, featuring literary essays, short
     </li>
   </ul>
 
+  <p class="buy-link-wrapper"><a href="#issue-three-buy" class="buy-link">Buy</a></p>
+
   <video autoplay loop muted playsinline>
     <source src="/assets/images/issue-one/transcript-issue-one-video.mp4" type="video/mp4">
   </video>
@@ -198,7 +204,7 @@ description: TRANSCRIPT is a seasonal magazine, featuring literary essays, short
   </p>
   <p>ISSUE THREE is available to order now.</p>
 
-  <h3>Buy ISSUE THREE · €17</h3>
+  <h3 id="issue-three-buy">Buy ISSUE THREE · €17</h3>
   <p>Shipping once per week within The Netherlands, to select countries in mainland Europe, and to the United Kingdom. For pick-ups in Amsterdam or Rotterdam, we'll reach out to you to coordinate after you've placed your order.</p>
   
   <div class="button-group">
@@ -249,6 +255,8 @@ description: TRANSCRIPT is a seasonal magazine, featuring literary essays, short
     </li>
   </ul>
 
+  <p class="buy-link-wrapper"><a href="#issue-four-buy" class="buy-link">Buy</a></p>
+
   <video autoplay loop muted playsinline>
     <source src="/assets/images/issue-one/transcript-issue-one-video.mp4" type="video/mp4">
   </video>
@@ -267,7 +275,7 @@ description: TRANSCRIPT is a seasonal magazine, featuring literary essays, short
   </p>
   <p>ISSUE FOUR is available now.</p>
 
-  <h3>Buy ISSUE FOUR · €18</h3>
+  <h3 id="issue-four-buy">Buy ISSUE FOUR · €18</h3>
   <p>Shipping once per week within The Netherlands, to select countries in mainland Europe, and to the United Kingdom. For pick-ups in Amsterdam or Rotterdam, we'll reach out to you to coordinate after you've placed your order.</p>
   
   <div class="button-group">

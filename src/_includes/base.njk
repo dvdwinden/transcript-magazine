@@ -9,6 +9,12 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body class="font-serif">
+    <header class="sticky-header" id="sticky-header">
+        <div class="sticky-header-content">
+            <img src="/assets/images/transcript-magazine-black.svg" alt="TRANSCRIPT Magazine" class="sticky-logo" />
+            <span class="sticky-issue-name"></span>
+        </div>
+    </header>
     <main role="main">
         {{ content | safe }}
     </main>
@@ -97,6 +103,74 @@
                 closeLightbox();
             }
         });
+
+        // Sticky header logic
+        const stickyHeader = document.getElementById('sticky-header');
+        const logoHeader = document.querySelector('.logo-header');
+        const stickyLogo = document.querySelector('.sticky-logo');
+        const stickyIssueName = document.querySelector('.sticky-issue-name');
+        const issues = document.querySelectorAll('.issue');
+
+        let currentIssue = null;
+
+        function updateStickyHeader() {
+            const scrollPos = window.scrollY;
+            const logoHeaderBottom = logoHeader ? logoHeader.offsetHeight : 0;
+
+            // Show header when scrolled past logo
+            if (scrollPos > logoHeaderBottom - 100) {
+                stickyHeader.classList.add('visible');
+            } else {
+                stickyHeader.classList.remove('visible');
+            }
+
+            // Determine which issue is in view
+            let foundIssue = null;
+            issues.forEach(issue => {
+                const rect = issue.getBoundingClientRect();
+                // Consider an issue "active" when it's in the top third of viewport
+                if (rect.top <= window.innerHeight / 3 && rect.bottom > 0) {
+                    foundIssue = issue;
+                }
+            });
+
+            // Update header content
+            if (foundIssue && foundIssue !== currentIssue) {
+                currentIssue = foundIssue;
+                const issueId = foundIssue.id;
+                const issueName = issueId.replace('issue-', 'ISSUE ').replace('-', ' ').toUpperCase();
+                
+                // Fade out logo
+                stickyLogo.style.opacity = '0';
+                
+                // Wait for fade out, then switch content
+                setTimeout(() => {
+                    stickyLogo.style.display = 'none';
+                    stickyIssueName.textContent = issueName;
+                    stickyIssueName.style.display = 'block';
+                    // Trigger reflow
+                    stickyIssueName.offsetHeight;
+                    stickyIssueName.classList.add('active');
+                }, 200);
+            } else if (!foundIssue && currentIssue !== null) {
+                currentIssue = null;
+                
+                // Fade out issue name
+                stickyIssueName.classList.remove('active');
+                
+                // Wait for fade out, then switch content
+                setTimeout(() => {
+                    stickyIssueName.style.display = 'none';
+                    stickyLogo.style.display = 'block';
+                    // Trigger reflow
+                    stickyLogo.offsetHeight;
+                    stickyLogo.style.opacity = '1';
+                }, 200);
+            }
+        }
+
+        window.addEventListener('scroll', updateStickyHeader);
+        window.addEventListener('load', updateStickyHeader);
     </script>
 </body>
 </html>

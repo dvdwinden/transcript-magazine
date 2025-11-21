@@ -64,6 +64,56 @@
     color: var(--color-bg);
 }
 
+/* Sticky header */
+.sticky-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--color-bg);
+    z-index: 100;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: opacity var(--transition-speed), transform var(--transition-speed);
+}
+
+.sticky-header.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.sticky-header-content {
+    max-width: var(--width-wide);
+    margin: 0 auto;
+    padding: 1rem var(--spacing-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+}
+
+.sticky-logo {
+    height: 40px;
+    width: auto;
+    transition: opacity 0.4s ease;
+}
+
+.sticky-issue-name {
+    display: none;
+    font-size: 1rem;
+    font-weight: 300;
+    font-style: italic;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    white-space: nowrap;
+}
+
+.sticky-issue-name.active {
+    opacity: 1;
+}
+
 body {
     font-family: theme('fontFamily.serif');
     font-size: var(--font-size-body);

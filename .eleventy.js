@@ -1,12 +1,25 @@
 const Image = require("@11ty/eleventy-img");
 
-async function imageShortcode(src, alt, sizes = "100vw") {
+async function imageShortcode(src, alt, sizes = "100vw", className = null) {
+  const path = require("path");
+  const extension = path.extname(src).toLowerCase();
+  
+  // For GIFs, preserve the format to keep animation
+  let formats = ["webp", "jpeg"];
+  let sharpOptions = {};
+  if (extension === ".gif") {
+    formats = ["gif", "webp"];
+    // Keep every frame instead of collapsing to the first one
+    sharpOptions = { animated: true };
+  }
+
   // For images in src/assets/images
   let metadata = await Image(src, {
     widths: [600, 1200, 1800, 2400],
-    formats: ["webp", "jpeg"],
+    formats: formats,
     outputDir: "./_site/img/",
     urlPath: "/img/",
+    sharpOptions: sharpOptions,
     filenameFormat: function (id, src, width, format, options) {
       const extension = path.extname(src);
       const name = path.basename(src, extension);
@@ -20,6 +33,10 @@ async function imageShortcode(src, alt, sizes = "100vw") {
     loading: "lazy",
     decoding: "async",
   };
+
+  if (className) {
+    imageAttributes.class = className;
+  }
 
   return Image.generateHTML(metadata, imageAttributes);
 }

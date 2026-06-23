@@ -3,65 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% if title %}{{ title }} · TRANSCRIPT Magazine{% else %}TRANSCRIPT Magazine{% endif %}</title>
+    <title>TRANSCRIPT / SEASONAL LITERARY MAGAZINE</title>
     <meta name="description" content="{{ description or 'TRANSCRIPT is a seasonal magazine, featuring literary essays, short stories, poetry, and everything in-between.' }}">
     <link rel="icon" href="/assets/favicon.png">
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body class="font-serif">
-    <header class="sticky-header" id="sticky-header">
-        <div class="sticky-header-content">
-            <img src="/assets/images/transcript-magazine-black.svg" alt="TRANSCRIPT Magazine" class="sticky-logo" />
-            <span class="sticky-issue-name"></span>
-            <div class="buy-menu">
-                <button class="buy-button" id="buy-button" aria-label="Buy issues">Buy</button>
-                <div class="buy-popover" id="buy-popover">
-                <a href="#issue-one" class="buy-popover-item disabled" data-tooltip="Sold out">
-                    <span>ISSUE ONE</span>
-                </a>
-                <a href="#issue-two" class="buy-popover-item">
-                    <span>ISSUE TWO</span>
-                </a>
-                <a href="#issue-three" class="buy-popover-item">
-                    <span>ISSUE THREE</span>
-                </a>
-                <a href="#issue-four" class="buy-popover-item">
-                    <span>ISSUE FOUR</span>
-                </a>
-                </div>
-            </div>
-        </div>
-    </header>
     <main role="main">
         {{ content | safe }}
     </main>
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <p>
-                        Nieuwpoortkade 2a<br>
-                        1055 RX Amsterdam<br>
-                        The Netherlands
-                    </p>
-                    <p>
-                        <a href="mailto:info@transcriptmag.store">Email</a><br>
-                        <a href="http://instagram.com/transcriptmagazine" target="_blank" rel="noopener">Instagram</a>
-                    </p>
-                </div>
-                <div class="footer-section">
-                    <h3>Find us at</h3>
-                    <p>
-                        <a href="https://www.athenaeum.nl/" target="_blank" rel="noopener">Athenaeum</a>, Amsterdam<br>
-                        <a href="https://www.deutrechtseboekenbar.nl/" target="_blank" rel="noopener">De Utrechtse Boekenbar</a>, Utrecht<br>
-                        <a href="https://kioskrotterdam.com/About" target="_blank" rel="noopener">Kiosk</a>, Rotterdam<br>
-                        <a href="https://magculture.com/collections/magazines/products/transcript-2" target="_blank" rel="noopener">magCulture</a>, London<br>
-                        <a href="https://frabsmagazines.com/" target="_blank" rel="noopener">Frab's Magazines</a>, Milan
-                    </p>
-                </div>
-            </div>
-        </div>
-    </footer>
     <div class="lightbox" id="lightbox">
         <button class="lightbox-close" aria-label="Close lightbox">&times;</button>
         <div class="lightbox-inner"></div>
@@ -121,90 +71,75 @@
             }
         });
 
-        // Sticky header logic
+        // Image loop — show each frame for 0.5s
+        const slideshow = document.querySelector('.slideshow');
+        if (slideshow) {
+            const frames = Array.from(slideshow.querySelectorAll('picture'));
+            if (frames.length) {
+                // Decode every frame up front so there's no white flash on first pass
+                slideshow.querySelectorAll('img').forEach(img => {
+                    img.loading = 'eager';
+                    if (img.decode) { img.decode().catch(() => {}); }
+                });
+
+                const shuffle = (a) => {
+                    for (let i = a.length - 1; i > 0; i--) {
+                        const j = Math.floor(Math.random() * (i + 1));
+                        [a[i], a[j]] = [a[j], a[i]];
+                    }
+                    return a;
+                };
+
+                // Build a play order that spreads each group evenly across the
+                // whole sequence, so same-issue/same-shoot frames never cluster.
+                const buildOrder = () => {
+                    const groups = {};
+                    frames.forEach((f) => {
+                        const img = f.querySelector('img');
+                        const src = (img && (img.currentSrc || img.src)) || '';
+                        const m = src.match(/issue-(one|two|three)/);
+                        const key = (m ? m[1] : 'other') + (/event/.test(src) ? '-event' : '');
+                        (groups[key] = groups[key] || []).push(f);
+                    });
+                    // Give each frame a fractional slot evenly spaced within its
+                    // group (plus jitter), then sort — large groups get spread out
+                    // across the full run instead of clumping at the tail.
+                    const items = [];
+                    Object.values(groups).forEach((g) => {
+                        shuffle(g);
+                        g.forEach((f, k) => items.push({ f, pos: (k + Math.random()) / g.length }));
+                    });
+                    items.sort((a, b) => a.pos - b.pos);
+                    return items.map((x) => x.f);
+                };
+
+                let order = buildOrder();
+                let i = 0;
+                order[0].classList.add('active');
+                setInterval(() => {
+                    order[i].classList.remove('active');
+                    i++;
+                    if (i >= order.length) { i = 0; order = buildOrder(); } // re-mix each loop
+                    order[i].classList.add('active');
+                }, 500);
+            }
+        }
+
+        // Sticky header logic — fade the logo in once scrolled past the opening logo
         const stickyHeader = document.getElementById('sticky-header');
         const logoHeader = document.querySelector('.logo-header');
-        const stickyLogo = document.querySelector('.sticky-logo');
-        const stickyIssueName = document.querySelector('.sticky-issue-name');
-        const issues = document.querySelectorAll('.issue');
-
-        let currentIssue = null;
 
         function updateStickyHeader() {
-            const scrollPos = window.scrollY;
             const logoHeaderBottom = logoHeader ? logoHeader.offsetHeight : 0;
-
-            // Show header when scrolled past logo
-            if (scrollPos > logoHeaderBottom - 100) {
+            if (window.scrollY > logoHeaderBottom - 100) {
                 stickyHeader.classList.add('visible');
             } else {
                 stickyHeader.classList.remove('visible');
-            }
-
-            // Determine which issue is in view
-            let foundIssue = null;
-            issues.forEach(issue => {
-                const rect = issue.getBoundingClientRect();
-                // Consider an issue "active" when it's in the top third of viewport
-                if (rect.top <= window.innerHeight / 3 && rect.bottom > 0) {
-                    foundIssue = issue;
-                }
-            });
-
-            // Update header content
-            if (foundIssue && foundIssue !== currentIssue) {
-                currentIssue = foundIssue;
-                const issueId = foundIssue.id;
-                const issueName = issueId.replace('issue-', 'ISSUE ').replace('-', ' ').toUpperCase();
-                
-                // Fade out logo
-                stickyLogo.style.opacity = '0';
-                
-                // Wait for fade out, then switch content
-                setTimeout(() => {
-                    stickyLogo.style.display = 'none';
-                    stickyIssueName.textContent = issueName;
-                    stickyIssueName.style.display = 'block';
-                    // Trigger reflow
-                    stickyIssueName.offsetHeight;
-                    stickyIssueName.classList.add('active');
-                }, 200);
-            } else if (!foundIssue && currentIssue !== null) {
-                currentIssue = null;
-                
-                // Fade out issue name
-                stickyIssueName.classList.remove('active');
-                
-                // Wait for fade out, then switch content
-                setTimeout(() => {
-                    stickyIssueName.style.display = 'none';
-                    stickyLogo.style.display = 'block';
-                    // Trigger reflow
-                    stickyLogo.offsetHeight;
-                    stickyLogo.style.opacity = '1';
-                }, 200);
             }
         }
 
         window.addEventListener('scroll', updateStickyHeader);
         window.addEventListener('load', updateStickyHeader);
-
-        // Smooth scroll for buy menu items
-        document.querySelectorAll('.buy-popover-item:not(.disabled)').forEach(item => {
-            item.addEventListener('click', (e) => {
-                e.preventDefault();
-                const targetId = item.getAttribute('href');
-                const targetElement = document.querySelector(targetId);
-                if (targetElement) {
-                    targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }
-            });
-        });
-
-        // Prevent disabled item clicks
-        document.querySelector('.buy-popover-item.disabled')?.addEventListener('click', (e) => {
-            e.preventDefault();
-        });
     </script>
 </body>
 </html>

@@ -1,10 +1,35 @@
+{% set siteUrl = 'https://transcriptmag.store' %}
+{% set siteTitle = 'TRANSCRIPT / SEASONAL LITERARY MAGAZINE' %}
+{% set siteDesc = description or 'TRANSCRIPT is a seasonal magazine, featuring literary essays, short stories, poetry, and everything in-between.' %}
+{% set siteImage = siteUrl + '/assets/og-image.jpg' %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TRANSCRIPT / SEASONAL LITERARY MAGAZINE</title>
-    <meta name="description" content="{{ description or 'TRANSCRIPT is a seasonal magazine, featuring literary essays, short stories, poetry, and everything in-between.' }}">
+    <title>{{ siteTitle }}</title>
+    <meta name="description" content="{{ siteDesc }}">
+    <link rel="canonical" href="{{ siteUrl }}/">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="TRANSCRIPT">
+    <meta property="og:title" content="{{ siteTitle }}">
+    <meta property="og:description" content="{{ siteDesc }}">
+    <meta property="og:url" content="{{ siteUrl }}/">
+    <meta property="og:image" content="{{ siteImage }}">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="TRANSCRIPT Magazine">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ siteTitle }}">
+    <meta name="twitter:description" content="{{ siteDesc }}">
+    <meta name="twitter:image" content="{{ siteImage }}">
+
     <link rel="icon" href="/assets/favicon.png">
     <link rel="stylesheet" href="/css/style.css">
 </head>
@@ -31,7 +56,7 @@
                     if (img) {
                         const scale = 0.6 + Math.random() * 0.4; // 0.6–1.0 of the cap
                         img.style.maxWidth = (65 * scale).toFixed(1) + '%';
-                        img.style.maxHeight = (55 * scale).toFixed(1) + 'vh';
+                        img.style.maxHeight = (55 * scale).toFixed(1) + 'svh';
                     }
                 });
 
@@ -69,12 +94,32 @@
                 let order = buildOrder();
                 let i = 0;
                 order[0].classList.add('active');
-                setInterval(() => {
+
+                const advance = () => {
                     order[i].classList.remove('active');
                     i++;
                     if (i >= order.length) { i = 0; order = buildOrder(); } // re-mix each loop
                     order[i].classList.add('active');
-                }, 500);
+                };
+
+                // Only run the loop while it's on-screen and the tab is visible
+                let timer = null;
+                let onScreen = false;
+                const startLoop = () => { if (!timer && onScreen && !document.hidden) timer = setInterval(advance, 500); };
+                const stopLoop = () => { if (timer) { clearInterval(timer); timer = null; } };
+
+                if ('IntersectionObserver' in window) {
+                    new IntersectionObserver((entries) => {
+                        onScreen = entries[0].isIntersecting;
+                        if (onScreen) startLoop(); else stopLoop();
+                    }, { threshold: 0 }).observe(slideshow);
+                } else {
+                    onScreen = true;
+                    startLoop();
+                }
+                document.addEventListener('visibilitychange', () => {
+                    if (document.hidden) stopLoop(); else startLoop();
+                });
             }
         }
 
@@ -89,7 +134,7 @@
                 entries.forEach(entry => {
                     entry.target.classList.toggle('is-visible', entry.isIntersecting);
                 });
-            }, { threshold: 0.15 });
+            }, { rootMargin: '0px 0px -20% 0px', threshold: 0 });
             reveals.forEach(el => revealObserver.observe(el));
         }
     </script>

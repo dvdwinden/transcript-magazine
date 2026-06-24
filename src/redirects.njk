@@ -1,0 +1,27 @@
+---
+pagination:
+  data: redirectSlugs
+  size: 1
+  alias: slug
+redirectSlugs:
+  - issue-one
+  - issue-two
+  - issue-three
+  - issue-four
+permalink: "/{{ slug }}/index.html"
+eleventyExcludeFromCollections: true
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Redirecting… · TRANSCRIPT</title>
+  <link rel="canonical" href="https://transcriptmag.store/">
+  <meta http-equiv="refresh" content="0; url=/">
+  <meta name="robots" content="noindex">
+  <script>location.replace('/');</script>
+</head>
+<body>
+  <p>This page has moved. <a href="/">Continue to transcriptmag.store</a>.</p>
+</body>
+</html>

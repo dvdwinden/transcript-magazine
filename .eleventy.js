@@ -47,6 +47,8 @@ module.exports = function (eleventyConfig) {
   // Pass through fonts and favicon (but not images - they'll be processed)
   eleventyConfig.addPassthroughCopy("src/assets/fonts");
   eleventyConfig.addPassthroughCopy("src/assets/favicon.png");
+  eleventyConfig.addPassthroughCopy("src/assets/og-image.jpg");
+  eleventyConfig.addPassthroughCopy("src/CNAME");
   eleventyConfig.addPassthroughCopy("src/assets/images/**/*.mp4");
   eleventyConfig.addPassthroughCopy({
     "src/assets/images/transcript-magazine-black.svg": "assets/images/transcript-magazine-black.svg"

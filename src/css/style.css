@@ -142,6 +142,27 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Subtle blur + fade-in as sections enter the viewport */
+.reveal {
+    opacity: 0;
+    filter: blur(3px);
+    transition: opacity 0.7s ease, filter 0.7s ease;
+    will-change: opacity, filter;
+}
+
+.reveal.is-visible {
+    opacity: 1;
+    filter: blur(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .reveal {
+        opacity: 1;
+        filter: none;
+        transition: none;
+    }
+}
+
 /* Sticky header */
 .sticky-header {
     position: fixed;
@@ -526,22 +547,7 @@ h2.subtitle {
 }
 
 img {
-    cursor: pointer;
     border-radius: var(--radius-sm);
-    transition: opacity var(--transition-speed);
-}
-
-img:hover {
-    opacity: 0.85;
-}
-
-.lightbox img {
-    cursor: default;
-    border-radius: 0;
-}
-
-.lightbox img:hover {
-    opacity: 1;
 }
 
 .photo-placeholder::after {

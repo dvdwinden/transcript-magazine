@@ -12,65 +12,7 @@
     <main role="main">
         {{ content | safe }}
     </main>
-    <div class="lightbox" id="lightbox">
-        <button class="lightbox-close" aria-label="Close lightbox">&times;</button>
-        <div class="lightbox-inner"></div>
-        <div class="lightbox-caption"></div>
-    </div>
     <script>
-        const lightbox = document.getElementById('lightbox');
-        const inner = lightbox.querySelector('.lightbox-inner');
-        const caption = lightbox.querySelector('.lightbox-caption');
-        const closeBtn = lightbox.querySelector('.lightbox-close');
-        const clickables = document.querySelectorAll('.photo-placeholder, img');
-
-        function closeLightbox() {
-            lightbox.classList.remove('active');
-            inner.innerHTML = '';
-            caption.innerHTML = '';
-        }
-
-        clickables.forEach(el => {
-            if (!lightbox.contains(el)) {
-                el.style.cursor = 'pointer';
-                el.addEventListener('click', (e) => {
-                    e.stopPropagation();
-                    inner.innerHTML = '';
-                    caption.innerHTML = '';
-                    const clone = el.cloneNode(true);
-                    // Ensure reasonable size inside lightbox
-                    clone.style.width = '';
-                    clone.style.height = '';
-                    inner.appendChild(clone);
-                    
-                    // Add caption if image has alt text
-                    const altText = el.alt || el.querySelector('img')?.alt;
-                    if (altText) {
-                        caption.textContent = altText;
-                    }
-                    
-                    lightbox.classList.add('active');
-                });
-            }
-        });
-
-        lightbox.addEventListener('click', (e) => {
-            if (e.target === lightbox) {
-                closeLightbox();
-            }
-        });
-
-        closeBtn.addEventListener('click', (e) => {
-            e.stopPropagation();
-            closeLightbox();
-        });
-
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape' && lightbox.classList.contains('active')) {
-                closeLightbox();
-            }
-        });
-
         // Image loop — show each frame for 0.5s
         const slideshow = document.querySelector('.slideshow');
         if (slideshow) {
@@ -80,6 +22,17 @@
                 slideshow.querySelectorAll('img').forEach(img => {
                     img.loading = 'eager';
                     if (img.decode) { img.decode().catch(() => {}); }
+                });
+
+                // Give each frame a slightly different size so the loop feels
+                // more random / less uniform.
+                frames.forEach((f) => {
+                    const img = f.querySelector('img');
+                    if (img) {
+                        const scale = 0.6 + Math.random() * 0.4; // 0.6–1.0 of the cap
+                        img.style.maxWidth = (65 * scale).toFixed(1) + '%';
+                        img.style.maxHeight = (55 * scale).toFixed(1) + 'vh';
+                    }
                 });
 
                 const shuffle = (a) => {
@@ -125,21 +78,20 @@
             }
         }
 
-        // Sticky header logic — fade the logo in once scrolled past the opening logo
-        const stickyHeader = document.getElementById('sticky-header');
-        const logoHeader = document.querySelector('.logo-header');
-
-        function updateStickyHeader() {
-            const logoHeaderBottom = logoHeader ? logoHeader.offsetHeight : 0;
-            if (window.scrollY > logoHeaderBottom - 100) {
-                stickyHeader.classList.add('visible');
-            } else {
-                stickyHeader.classList.remove('visible');
-            }
+        // Subtle blur + fade as each section scrolls into view (and back out,
+        // reversing when scrolling up). On the black stats section we blur only
+        // the text inside, not the whole section.
+        const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        if (!prefersReducedMotion && 'IntersectionObserver' in window) {
+            const reveals = document.querySelectorAll('.logo-header img, .subtitle, .postcard, .description-inner, .bookmark-section picture');
+            reveals.forEach(el => el.classList.add('reveal'));
+            const revealObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    entry.target.classList.toggle('is-visible', entry.isIntersecting);
+                });
+            }, { threshold: 0.15 });
+            reveals.forEach(el => revealObserver.observe(el));
         }
-
-        window.addEventListener('scroll', updateStickyHeader);
-        window.addEventListener('load', updateStickyHeader);
     </script>
 </body>
 </html>

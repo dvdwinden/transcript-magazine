@@ -302,7 +302,8 @@ h2.subtitle {
     margin-bottom: 0;
 }
 
-.buy-section a {
+.buy-section a,
+.signoff-section a {
     text-decoration: underline;
     text-decoration-color: var(--color-link-underline);
     text-decoration-thickness: 1px;
@@ -310,7 +311,8 @@ h2.subtitle {
     transition: opacity var(--transition-speed), text-decoration-color var(--transition-speed);
 }
 
-.buy-section a:hover {
+.buy-section a:hover,
+.signoff-section a:hover {
     opacity: 0.6;
     text-decoration-color: var(--color-link-underline-hover);
 }

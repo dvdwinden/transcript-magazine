@@ -64,10 +64,6 @@ description: TRANSCRIPT is a seasonal magazine, featuring literary essays, short
   </div>
 </section>
 
-<section class="fullscreen bookmark-section">
-  {% image "./src/assets/images/bookmark.png", "TRANSCRIPT bookmark" %}
-</section>
-
 <section class="fullscreen buy-section">
   <div class="description-inner">
     <p><em>ISSUE ONE</em><br><span class="sold-out">sold out</span></p>
@@ -77,8 +73,12 @@ description: TRANSCRIPT is a seasonal magazine, featuring literary essays, short
   </div>
 </section>
 
+<section class="fullscreen bookmark-section">
+  {% image "./src/assets/images/bookmark.png", "TRANSCRIPT bookmark" %}
+</section>
+
 <section class="fullscreen signoff-section">
   <div class="description-inner">
-    <p>xoxo,<br>Iris &amp; Daniël</p>
+    <p>xoxo,<br><a href="https://iriscuppen.com/?ref=transcriptmag.store" rel="external" target="_blank">Iris</a> &amp; <a href="https://daniel.pizza/?ref=transcriptmag.store" rel="external" target="_blank">Daniël</a></p>
   </div>
 </section>

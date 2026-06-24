@@ -66,10 +66,10 @@ description: TRANSCRIPT is a seasonal magazine, featuring literary essays, short
 
 <section class="fullscreen buy-section">
   <div class="description-inner">
-    <p><em>ISSUE ONE</em><br><span class="sold-out">sold out</span></p>
-    <p><em>ISSUE TWO</em><br><a href="https://buy.stripe.com/5kA14u0dJgNsgKs7sE" rel="external" target="_blank">NL</a>, <a href="https://buy.stripe.com/5kA8wW3pV54KeCk9AL" rel="external" target="_blank">EU</a>, <a href="https://buy.stripe.com/5kA8wW3pV54KeCk9AL" rel="external" target="_blank">UK</a></p>
-    <p><em>ISSUE THREE</em><br><a href="https://buy.stripe.com/14k8wW6C79l08dW6oD" rel="external" target="_blank">NL</a>, <a href="https://buy.stripe.com/dR64gGaSneFkdyg5kA" rel="external" target="_blank">EU</a>, <a href="https://buy.stripe.com/dR64gGaSneFkdyg5kA" rel="external" target="_blank">UK</a></p>
-    <p><em>ISSUE FOUR</em><br><a href="https://buy.stripe.com/bJe00kdhc7Xd4cl6nN1oI0t" rel="external" target="_blank">NL</a>, <a href="https://buy.stripe.com/7sY14o1yufpF10927x1oI0r" rel="external" target="_blank">EU</a>, <a href="https://buy.stripe.com/7sY14o1yufpF10927x1oI0r" rel="external" target="_blank">UK</a></p>
+    <p><em class="nowrap">ISSUE ONE</em><br><span class="sold-out">sold out</span></p>
+    <p><em class="nowrap">ISSUE TWO</em><br><a href="https://buy.stripe.com/5kA14u0dJgNsgKs7sE" rel="external" target="_blank">NL</a>, <a href="https://buy.stripe.com/5kA8wW3pV54KeCk9AL" rel="external" target="_blank">EU</a>, <a href="https://buy.stripe.com/5kA8wW3pV54KeCk9AL" rel="external" target="_blank">UK</a></p>
+    <p><em class="nowrap">ISSUE THREE</em><br><a href="https://buy.stripe.com/14k8wW6C79l08dW6oD" rel="external" target="_blank">NL</a>, <a href="https://buy.stripe.com/dR64gGaSneFkdyg5kA" rel="external" target="_blank">EU</a>, <a href="https://buy.stripe.com/dR64gGaSneFkdyg5kA" rel="external" target="_blank">UK</a></p>
+    <p><em class="nowrap">ISSUE FOUR</em><br><a href="https://buy.stripe.com/bJe00kdhc7Xd4cl6nN1oI0t" rel="external" target="_blank">NL</a>, <a href="https://buy.stripe.com/7sY14o1yufpF10927x1oI0r" rel="external" target="_blank">EU</a>, <a href="https://buy.stripe.com/7sY14o1yufpF10927x1oI0r" rel="external" target="_blank">UK</a></p>
   </div>
 </section>
 

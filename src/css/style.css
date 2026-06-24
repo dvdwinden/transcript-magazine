@@ -334,6 +334,17 @@ h2.subtitle {
     font-style: italic;
 }
 
+.signoff-section .nowrap {
+    white-space: nowrap;
+}
+
+/* Mobile: slightly smaller base type */
+@media (max-width: 600px) {
+    :root {
+        --font-size-body: 1.125rem; /* 18px */
+    }
+}
+
 .description-inner p {
     margin-bottom: var(--spacing-sm);
 }
@@ -366,8 +377,8 @@ h2.subtitle {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    padding: 25vh 0 20vh;
-    padding: 25svh 0 20svh;
+    padding: 25vh 0 12vh;
+    padding: 25svh 0 12svh;
     transition: opacity 0.15s ease;
 }
 
@@ -377,8 +388,8 @@ h2.subtitle {
 
 .slideshow img {
     max-width: 65%;
-    max-height: 55vh;
-    max-height: 55svh;
+    max-height: 62vh;
+    max-height: 62svh;
     width: auto;
     height: auto;
     object-fit: contain;

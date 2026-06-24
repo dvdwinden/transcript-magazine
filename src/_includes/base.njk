@@ -50,13 +50,16 @@
                 });
 
                 // Give each frame a slightly different size so the loop feels
-                // more random / less uniform.
+                // more random / less uniform. Images run a bit larger on mobile.
+                const mobile = window.matchMedia('(max-width: 600px)').matches;
+                const widthBase = mobile ? 82 : 65;
+                const heightBase = mobile ? 60 : 62;
                 frames.forEach((f) => {
                     const img = f.querySelector('img');
                     if (img) {
                         const scale = 0.6 + Math.random() * 0.4; // 0.6–1.0 of the cap
-                        img.style.maxWidth = (65 * scale).toFixed(1) + '%';
-                        img.style.maxHeight = (55 * scale).toFixed(1) + 'svh';
+                        img.style.maxWidth = (widthBase * scale).toFixed(1) + '%';
+                        img.style.maxHeight = (heightBase * scale).toFixed(1) + 'svh';
                     }
                 });
 

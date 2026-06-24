@@ -79,6 +79,6 @@ description: TRANSCRIPT is a seasonal magazine, featuring literary essays, short
 
 <section class="fullscreen signoff-section">
   <div class="description-inner">
-    <p>xoxo,<br><a href="https://iriscuppen.com/?ref=transcriptmag.store" rel="external" target="_blank">Iris</a> &amp; <a href="https://daniel.pizza/?ref=transcriptmag.store" rel="external" target="_blank">Daniël</a></p>
+    <p>xoxo,<br><span class="nowrap"><a href="https://iriscuppen.com/?ref=transcriptmag.store" rel="external" target="_blank">Iris</a> &amp; <a href="https://daniel.pizza/?ref=transcriptmag.store" rel="external" target="_blank">Daniël</a></span></p>
   </div>
 </section>

@@ -344,12 +344,23 @@ h2.subtitle {
         --font-size-body: 1.125rem; /* 18px */
     }
 
+    /* Shrink the loop stage to the image so there isn't a tall empty
+       band between the slideshow and the text section below it */
+    .loop-section {
+        min-height: 0;
+    }
+
+    .slideshow {
+        height: 80vh;
+        height: 80svh;
+    }
+
     /* Center images vertically so they scale from the middle outwards,
        not anchored to a fixed point near the top */
     .slideshow picture {
         align-items: center;
-        padding: 12vh 0;
-        padding: 12svh 0;
+        padding: 4vh 0;
+        padding: 4svh 0;
     }
 }
 

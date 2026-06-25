@@ -63,7 +63,25 @@
     .sticky-logo {
         filter: invert(1);
     }
-    
+
+    /* The scroll-reveal animation also drives `filter`, which would
+       otherwise out-specify the invert above and leave the logo black. */
+    .logo-header img.reveal {
+        filter: invert(1) blur(3px);
+    }
+
+    .logo-header img.reveal.is-visible {
+        filter: invert(1) blur(0);
+    }
+
+    /* Match the dark photo/stat stages to the site background */
+    .stats-section,
+    .loop-section,
+    .slideshow,
+    .slideshow picture {
+        background-color: var(--color-bg);
+    }
+
     /* Slightly reduce brightness of photos in dark mode */
     .photo-gallery img,
     .issue picture img,

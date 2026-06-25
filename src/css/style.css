@@ -74,14 +74,6 @@
         filter: invert(1) blur(0);
     }
 
-    /* Match the dark photo/stat stages to the site background */
-    .stats-section,
-    .loop-section,
-    .slideshow,
-    .slideshow picture {
-        background-color: var(--color-bg);
-    }
-
     /* Slightly reduce brightness of photos in dark mode */
     .photo-gallery img,
     .issue picture img,
@@ -421,6 +413,18 @@ h2.subtitle {
 
 .slideshow picture.active {
     opacity: 1;
+}
+
+/* In dark mode, match the dark photo/stat stages to the site background.
+   Placed after the light-mode #161514 declarations above so it wins on
+   source order (equal specificity). */
+@media (prefers-color-scheme: dark) {
+    .stats-section,
+    .loop-section,
+    .slideshow,
+    .slideshow picture {
+        background-color: var(--color-bg);
+    }
 }
 
 .slideshow img {
